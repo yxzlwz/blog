@@ -1,11 +1,21 @@
 import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
+import katex from 'markdown-it-katex';
 
 export default defineUserConfig({
   title: '异想之旅のBlog',
   description: '异想之旅的技术分享',
-  head: [['script', { src: '/js/main.js' }]],
+  head: [
+    ['script', { src: '/js/main.js' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.staticfile.org/KaTeX/0.16.7/katex.min.css',
+      },
+    ],
+  ],
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -63,4 +73,8 @@ export default defineUserConfig({
     // },
   }),
   // debug: true,
+  extendsMarkdown: md => {
+    md.set({ html: true });
+    md.use(katex);
+  },
 });
