@@ -8,13 +8,8 @@ export default defineUserConfig({
   description: '异想之旅的技术分享',
   head: [
     ['script', { src: '/js/main.js' }],
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.staticfile.org/KaTeX/0.16.7/katex.min.css',
-      },
-    ],
+    ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
+    ['link', { rel: 'stylesheet', href: '/css/github-markdown.min.css' }],
   ],
   locales: {
     '/': {
