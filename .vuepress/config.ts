@@ -44,6 +44,13 @@ export default defineUserConfig({
       //   ],
       // },
     ],
+    commentConfig: {
+      type: 'valine',
+      options: {
+        appId: 'oQ0DjfVjyzu1vh5bI9sB9nBM-gzGzoHsz',
+        appKey: 'm4ciXVKEbjk5c4JdKz8NQF6H',
+      },
+    },
     // bulletin: {
     //   body: [
     //     {
