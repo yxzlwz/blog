@@ -1,6 +1,8 @@
 import { defineUserConfig } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
 import katex from 'markdown-it-katex';
+import { seoPlugin } from 'vuepress-plugin-seo2';
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 export default defineUserConfig({
   title: '异想之旅のBlog',
@@ -61,6 +63,19 @@ export default defineUserConfig({
     //   ],
     // },
   }),
+  plugins: [
+    seoPlugin({
+      hostname: 'https://www.yixiangzhilv.com',
+      author: {
+        name: '异想之旅王子',
+        email: 'mail@yixiangzhilv.com',
+      },
+    }),
+    sitemapPlugin({
+      hostname: 'https://www.yixiangzhilv.com',
+      changefreq: 'weekly',
+    }),
+  ],
   extendsMarkdown: md => {
     md.set({ html: true });
     md.use(katex);
