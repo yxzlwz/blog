@@ -1,5 +1,4 @@
 import { defineUserConfig } from 'vuepress';
-import type { DefaultThemeOptions } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
 import katex from 'markdown-it-katex';
 
@@ -10,6 +9,13 @@ export default defineUserConfig({
     ['script', { src: '/js/main.js' }],
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: '/css/github-markdown.min.css' }],
+    [
+      'meta',
+      {
+        name: 'description',
+        content: '异想之旅官网 异想之旅王子的技术分享博客',
+      },
+    ],
   ],
   locales: {
     '/': {
@@ -23,18 +29,12 @@ export default defineUserConfig({
     authorAvatar: '/head.png',
     lastUpdatedText: '',
     series: {
-      '/docs/yxzl/': [
-        '/docs/yxzl/about',
-        // {
-        //   text: '我的项目',
-        //   children: ['/docs/yxzl/projects/*'],
-        // },
-      ],
+      '/docs/yxzl/projects/': ['yiyan'],
     },
     navbar: [
       { text: 'Home', link: '/' },
+      { text: 'Projects', link: '/docs/yxzl/projects/yiyan' },
       { text: 'About', link: '/docs/yxzl/about' },
-      // { text: 'Categories', link: '/categories/reco/1/' },
       // { text: 'Tags', link: '/tags/tag1/1/' },
       // {
       //   text: 'Docs',
@@ -60,21 +60,7 @@ export default defineUserConfig({
     //     },
     //   ],
     // },
-    // commentConfig: {
-    //   type: 'valie',
-    //   // options 与 1.x 的 valineConfig 配置一致
-    //   options: {
-    //     // appId: 'xxx',
-    //     // appKey: 'xxx',
-    //     // placeholder: '填写邮箱可以收到回复提醒哦！',
-    //     // verify: true, // 验证码服务
-    //     // notify: true,
-    //     // recordIP: true,
-    //     // hideComments: true // 隐藏评论
-    //   },
-    // },
   }),
-  // debug: true,
   extendsMarkdown: md => {
     md.set({ html: true });
     md.use(katex);
