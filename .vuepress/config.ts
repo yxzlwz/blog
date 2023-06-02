@@ -37,7 +37,6 @@ export default defineUserConfig({
       { text: 'Home', link: '/' },
       { text: 'Projects', link: '/docs/yxzl/projects/yiyan' },
       { text: 'About', link: '/docs/yxzl/about' },
-      // { text: 'Tags', link: '/tags/tag1/1/' },
       // {
       //   text: 'Docs',
       //   children: [
@@ -46,11 +45,20 @@ export default defineUserConfig({
       //   ],
       // },
     ],
+    // commentConfig: {
+    //   type: 'valine',
+    //   options: {
+    //     appId: 'oQ0DjfVjyzu1vh5bI9sB9nBM-gzGzoHsz',
+    //     appKey: 'm4ciXVKEbjk5c4JdKz8NQF6H',
+    //   },
+    // },
     commentConfig: {
-      type: 'valine',
+      type: 'giscus',
       options: {
-        appId: 'oQ0DjfVjyzu1vh5bI9sB9nBM-gzGzoHsz',
-        appKey: 'm4ciXVKEbjk5c4JdKz8NQF6H',
+        repo: 'yxzlwz/blog-comment',
+        repoId: 'R_kgDOJqnPWA',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOJqnPWM4CW6dK',
       },
     },
     // bulletin: {
