@@ -2,7 +2,6 @@
 title: 关于我
 date: 2023/05/28
 ---
-
 > 你好，我是异想之旅
 >
 > 热爱骑行和听歌的高中生，全栈开发&信竞选手，偶尔客串情感大师。
@@ -15,7 +14,7 @@ date: 2023/05/28
 
 ~~FBI WARNING: 不要去翻我的旧文章……~~
 
-![1685705610785](https://cdn.yixiangzhilv.com/images/a8278419b1c80c35cf3ca0962589693c.png)
+![1685705610785](https://cdn.yixiangzhilv.com/images/a8278419b1c80c35cf3ca0962589693c.png/smaller_jpg)
 
 2020年网课期间，闲来无事（划掉）学习了HTML
 
@@ -27,7 +26,7 @@ date: 2023/05/28
 
 非常开心！一位热心的、教会了我很多知识的、告诉了我学习方向的大佬！！
 
-![1685705658945](https://cdn.yixiangzhilv.com/images/b199df2d7c55cdac7e7a31d13a8bd4a0.jpg)
+![1685705658945](https://cdn.yixiangzhilv.com/images/b199df2d7c55cdac7e7a31d13a8bd4a0.jpg/smaller_jpg)
 
 对了我很喜欢骑行
 
@@ -47,4 +46,4 @@ date: 2023/05/28
 
 **祝我23年省赛取得好成绩！**
 
-![1685705731122](https://cdn.yixiangzhilv.com/images/0e417c9be12df5f37963a01a302416ab.jpg)
+![1685705731122](https://cdn.yixiangzhilv.com/images/0e417c9be12df5f37963a01a302416ab.jpg/smaller_jpg)
