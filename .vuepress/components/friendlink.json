@@ -1,0 +1,18 @@
+{
+  "open_source_project": [
+    {
+      "title": "vuepress-reco",
+      "description": "一款简洁的 vuepress 博客 & 文档 主题。",
+      "url": "https://vuepress-theme-reco.recoluan.com/",
+      "logo": "https://vuepress-theme-reco.recoluan.com/logo.png"
+    }
+  ],
+  "friend": [
+    {
+      "title": "Wenson",
+      "description": "Keep looking don't settle",
+      "url": "https://www.iwenson.com/",
+      "logo": "https://www.iwenson.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddfikezfh%2Fimage%2Fupload%2Fv1673792150%2Fpeeps_avatar_alpha_a8cb7db025.png&w=640&q=75"
+    }
+  ]
+}

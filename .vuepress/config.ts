@@ -37,6 +37,7 @@ export default defineUserConfig({
       { text: 'Home', link: '/' },
       { text: 'Projects', link: '/docs/yxzl/projects/yiyan' },
       { text: 'About', link: '/docs/yxzl/about' },
+      { text: 'Friend Link', link: '/docs/yxzl/friendlink' },
       // {
       //   text: 'Docs',
       //   children: [
@@ -55,10 +56,10 @@ export default defineUserConfig({
     commentConfig: {
       type: 'giscus',
       options: {
-        repo: 'yxzlwz/blog-comment',
-        repoId: 'R_kgDOJqnPWA',
+        repo: 'yxzlwz/blog',
+        repoId: 'R_kgDOJq1RYg',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOJqnPWM4CW6dK',
+        categoryId: 'DIC_kwDOJq1RYs4CW7t8',
       },
     },
     // bulletin: {
