@@ -16,7 +16,7 @@ date: 2023/06/03
 希望交换友链的朋友请通过如下两种方式提交：
 
 - 在本文档的评论区留言
-- 在 [GitHub](https://github.com/yxzlwz/blog) 提交 Pull Request
+- 在 [GitHub](https://github.com/yxzlwz/blog/blob/master/.vuepress/components/friendlink.json) 上提交 Pull Request
 
 若您的网站已添加异想之旅的友链，我会在看到后的第一时间添加您的友链并部署，如果没有的话加不加看我心情~
 
