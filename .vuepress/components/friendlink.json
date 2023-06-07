@@ -5,6 +5,12 @@
       "description": "一款简洁的 vuepress 博客 & 文档 主题。",
       "url": "https://vuepress-theme-reco.recoluan.com/",
       "logo": "https://vuepress-theme-reco.recoluan.com/logo.png"
+    },
+    {
+      "title": "Hitokoto - 一言",
+      "description": "把句子汇聚起来，传递更多的感动。",
+      "url": "https://hitokoto.cn/",
+      "logo": "https://hitokoto.cn/favicon.ico"
     }
   ],
   "friend": [

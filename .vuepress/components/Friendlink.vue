@@ -12,24 +12,33 @@ const data = _data[props.type];
 </script>
 
 <template>
-  <div class="card" v-for="i in data">
-    <div class="card-details">
-      <img class="logo" :src="i.logo" />
-      <p class="text-title">{{ i.title }}</p>
-      <p class="text-body">{{ i.description }}</p>
+  <div class="card-list">
+    <div class="card" v-for="i in data">
+      <div class="card-details">
+        <img class="logo" :src="i.logo" />
+        <p class="text-title">{{ i.title }}</p>
+        <p class="text-body">{{ i.description }}</p>
+      </div>
+      <a :href="i.url" target="_blank">
+        <button class="card-button">点击前往</button>
+      </a>
     </div>
-    <a :href="i.url" target="_blank">
-      <button class="card-button">点击前往</button>
-    </a>
   </div>
 </template>
 
 <style scoped>
 @import url('../../node_modules/@vuepress-reco/tailwindcss-config/lib/client/styles/tailwindcss-base.css');
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  align-items: center;
+}
+
 .card {
-  width: 190px;
-  /* height: 354px; */
+  width: 250px;
   border-radius: 20px;
   position: relative;
   padding: 1.8rem;
@@ -37,7 +46,7 @@ const data = _data[props.type];
   transition: 0.5s ease-out;
   overflow: visible;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 10px 30px 10px;
 }
 
 .card-details {

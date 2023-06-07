@@ -31,7 +31,7 @@ export default defineUserConfig({
     authorAvatar: '/head.png',
     lastUpdatedText: '',
     series: {
-      '/docs/yxzl/projects/': ['yiyan'],
+      '/docs/yxzl/projects/': ['yiyan', 'lightmysql'],
     },
     navbar: [
       { text: 'Home', link: '/' },
