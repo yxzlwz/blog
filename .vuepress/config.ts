@@ -62,6 +62,14 @@ export default defineUserConfig({
         categoryId: 'DIC_kwDOJq1RYs4CW7t8',
       },
     },
+    algolia: {
+      appId: 'N32QD6F9U4',
+      apiKey: '2b0bc41ff2874019c52f998bd0d9ba89',
+      indexName: 'yixiangzhilv',
+      inputSelector: '### REPLACE ME ####',
+      algoliaOptions: { facetFilters: ['lang:$LANG'] },
+      debug: false, // Set debug to true if you want to inspect the dropdown
+    },
     // bulletin: {
     //   body: [
     //     {
