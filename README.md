@@ -18,8 +18,12 @@ bannerBrand:
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/yxzlwz' }
-    - { icon: 'LogoQuora', link: 'https://www.zhihu.com/people/yxzlwz' }
+    - { icon: 'ZhihuCircleFilled', link: 'https://www.zhihu.com/people/yxzlwz' }
     # - { icon: 'Email', link: 'email://mail@yixiangzhilv.com' }
+footer:
+  record: 鲁ICP备2020034769号-3
+  recordLink: https://beian.miit.gov.cn/
+  startYear: 2018
 # isShowTitleInHome: true
 # actionText: About
 # actionLink: /views/other/about
