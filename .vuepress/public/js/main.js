@@ -1,3 +1,13 @@
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-YNWN3VVCTL');
+
+// 一言
 if (location.pathname === '/') {
   fetch('https://api.yixiangzhilv.com/yiyan/sentence/')
     .then(res => res.json())

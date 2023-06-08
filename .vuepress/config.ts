@@ -8,7 +8,6 @@ export default defineUserConfig({
   title: '异想之旅のBlog',
   description: '异想之旅的技术分享',
   head: [
-    ['script', { src: '/js/main.js' }],
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: '/css/github-markdown.min.css' }],
     [
@@ -18,6 +17,14 @@ export default defineUserConfig({
         content: '异想之旅官网 异想之旅王子的技术分享博客',
       },
     ],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-YNWN3VVCTL',
+      },
+    ],
+    ['script', { src: '/js/main.js' }],
   ],
   locales: {
     '/': {
