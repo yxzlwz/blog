@@ -1,3 +1,13 @@
 .banner-brand__wrapper .banner-brand__content .title {
   height: 140px;
 }
+
+.banner-wrapper::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  /* background: url('//api.yixiangzhilv.com/utils/wallpaper'); */
+  filter: brightness(50%) blur(3px);
+}

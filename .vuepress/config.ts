@@ -5,8 +5,6 @@ import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 export default defineUserConfig({
-  title: '异想之旅のBlog',
-  description: '异想之旅的技术分享',
   head: [
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: '/css/github-markdown.min.css' }],

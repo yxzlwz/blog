@@ -8,7 +8,7 @@ gtag('js', new Date());
 gtag('config', 'G-YNWN3VVCTL');
 
 // 一言
-if (location.pathname === '/') {
+const get_yiyan = () => {
   fetch('https://api.yixiangzhilv.com/yiyan/sentence/')
     .then(res => res.json())
     .then(res => {
@@ -23,8 +23,13 @@ if (location.pathname === '/') {
       if (tagline) {
         tagline.innerHTML = `${res.content} - 「${res.from_show}」`;
       }
+      tagline.onclick = get_yiyan;
     })
     .catch(error => {
       console.log('请求发生错误:', error);
     });
+};
+
+if (location.pathname === '/') {
+  get_yiyan();
 }
