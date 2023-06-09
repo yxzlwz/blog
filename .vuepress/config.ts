@@ -5,6 +5,7 @@ import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 export default defineUserConfig({
+  shouldPrefetch: false,
   head: [
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: '/css/github-markdown.min.css' }],
