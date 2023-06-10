@@ -5,6 +5,7 @@ import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 export default defineUserConfig({
+  title:'异想之旅のBlog',
   shouldPrefetch: false,
   head: [
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
@@ -23,7 +24,7 @@ export default defineUserConfig({
         src: 'https://www.googletagmanager.com/gtag/js?id=G-YNWN3VVCTL',
       },
     ],
-    ['script', { src: '/js/main.js' }],
+    // ['script', { src: '/js/main.js', defer: true }],
   ],
   locales: {
     '/': {
@@ -37,7 +38,7 @@ export default defineUserConfig({
     authorAvatar: '/head.png',
     lastUpdatedText: '',
     series: {
-      '/docs/yxzl/projects/': ['yiyan', 'lightmysql'],
+      '/docs/yxzl/projects/': ['yiyan', 'lightmysql', 'cloudreve'],
     },
     navbar: [
       { text: 'Home', link: '/' },

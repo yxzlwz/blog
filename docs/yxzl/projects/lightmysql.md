@@ -3,6 +3,10 @@ title: lightmysql
 date: 2023/06/03 19:23:00
 ---
 
+[yxzlwz/lightmysql: A simple python package to use SQL database with python list and dict, rather than SQL language.](https://github.com/yxzlwz/lightmysql)
+
+[lightmysql · PyPI](https://pypi.org/project/lightmysql/)
+
 ## 项目初衷
 
 曾几何时，我是一位非常厌恶书写 SQL 代码的萌新，于是我就萌生了一个想法，能不能写一个库，让我可以简单地通过 Python 的列表和字典来构建 SQL 语句，然后直接执行，而不用再去写 SQL 语句。于是，lightmysql 就诞生了。
