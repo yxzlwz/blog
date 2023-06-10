@@ -5,7 +5,7 @@ import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 export default defineUserConfig({
-  title:'异想之旅のBlog',
+  title: '异想之旅のBlog',
   shouldPrefetch: false,
   head: [
     ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
@@ -96,5 +96,8 @@ export default defineUserConfig({
   extendsMarkdown: md => {
     md.set({ html: true });
     md.use(katex);
+  },
+  extendsPage: page => {
+    page.data.tagline = '';
   },
 });

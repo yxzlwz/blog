@@ -22,6 +22,7 @@ bannerBrand:
   title: 异想之旅のBlog
   description: 欢迎来到异想之旅的新家！
   tagline: 亿言加载中...
+  tagline_variable: true
   buttons:
     - { text: 关于我, link: '/docs/yxzl/about.html' }
     # - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
