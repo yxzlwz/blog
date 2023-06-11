@@ -3,9 +3,9 @@ title: 友情链接
 date: 2023/06/03
 ---
 
-## 开源项目
+## 项目
 
-<Friendlink type="open_source_project" />
+<Friendlink type="project" />
 
 ## 朋友们
 

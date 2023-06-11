@@ -26,11 +26,7 @@ export default defineUserConfig({
     ],
     // ['script', { src: '/js/main.js', defer: true }],
   ],
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-    },
-  },
+  lang: 'zh-CN',
   theme: recoTheme({
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',

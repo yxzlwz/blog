@@ -27,8 +27,6 @@ const data = _data[props.type];
 </template>
 
 <style scoped>
-@import url('../../node_modules/@vuepress-reco/tailwindcss-config/lib/client/styles/tailwindcss-base.css');
-
 .card-list {
   display: flex;
   flex-wrap: wrap;
