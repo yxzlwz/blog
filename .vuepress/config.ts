@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
 import katex from 'markdown-it-katex';
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
@@ -17,13 +18,13 @@ export default defineUserConfig({
         content: '异想之旅官网 异想之旅王子的技术分享博客',
       },
     ],
-    [
-      'script',
-      {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-YNWN3VVCTL',
-      },
-    ],
+    // [
+    //   'script',
+    //   {
+    //     async: true,
+    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-YNWN3VVCTL',
+    //   },
+    // ],
     // ['script', { src: '/js/main.js', defer: true }],
   ],
   lang: 'zh-CN',
@@ -77,6 +78,9 @@ export default defineUserConfig({
     // },
   }),
   plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-YNWN3VVCTL',
+    }),
     seoPlugin({
       hostname: 'https://www.yixiangzhilv.com',
       author: {
