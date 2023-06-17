@@ -30,11 +30,13 @@ bannerBrand:
     - { icon: 'Github', link: 'https://github.com/yxzlwz' }
     - { icon: 'Zhihu', link: 'https://www.zhihu.com/people/yxzlwz' }
     - { icon: 'Tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAvr2qhC4swqmm4RwbEtvcRFutt_MxKrNptgwxH4eqIK0JQFdyNi-IziTTRbigwPRE' }
+    - { icon: 'Twitter', link: 'https://twitter.com/yxzlwz' }
 blog:
   socialLinks:
     - { icon: 'Github', link: 'https://github.com/yxzlwz' }
     - { icon: 'Zhihu', link: 'https://www.zhihu.com/people/yxzlwz' }
     - { icon: 'Tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAvr2qhC4swqmm4RwbEtvcRFutt_MxKrNptgwxH4eqIK0JQFdyNi-IziTTRbigwPRE' }
+    - { icon: 'Twitter', link: 'https://twitter.com/yxzlwz' }
 footer:
   record: 鲁ICP备2020034769号-3
   recordLink: https://beian.miit.gov.cn/
