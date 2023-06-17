@@ -29,16 +29,23 @@ export default defineUserConfig({
     series: {
       '/docs/yxzl/projects/': ['yiyan', 'lightmysql', 'cloudreve'],
       '/docs/genuine-oj/': [
-        { text: '简介', children: ['README', 'api'] },
+        'introduction',
         {
           text: '部署',
-          children: ['before_start', 'frontend', 'backend', 'judger'],
+          children: [
+            'before_start',
+            'frontend',
+            '/docs/genuine-oj/backend.md',
+            'judger',
+            'docker',
+          ],
+          disableSort: true,
         },
         {
           text: '使用教程和说明',
           children: [
             'about_hidden',
-            'add_judge_language',
+            '/docs/genuine-oj/add_judge_language.md',
             'test_case',
             'end_relationship',
           ],

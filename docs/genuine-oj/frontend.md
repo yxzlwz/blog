@@ -1,8 +1,9 @@
-# 前端
+---
+title: 前端
+date: 2023/06/17 17:10:19
+---
 
 ## 克隆代码
-
-目前 frontend 仓库中的项目未完成，建议使用 fronted-naive 仓库。
 
 根据自己所处的网络环境选择以下任意代码：
 
@@ -96,6 +97,8 @@ yarn build
 
 因此，我们在正式生产环境需要对静态文件服务器进行特殊配置并加入反向代理。Nginx 的配置文件示例如下（牵扯到后端的一些内容，**看不明白可以先去看后端**）：
 
+:::: code-group
+::: code-group-item 使用 uwsgi 协议
 ```nginx
 server {
     listen         80;
@@ -106,32 +109,46 @@ server {
         try_files  $uri $uri/ /index.html;
     }
     location  /api  {
-        # 使用 uwsgi
         client_max_body_size  1024m;  # 允许上传的文件大小，上传测试数据需要
         include     uwsgi_params;
         uwsgi_pass  unix:/srv/socks/oj_backend.sock;
         rewrite     ^/api/(.*)$  /$1  break;
     }
-    # location  /api  {
-    #     # 使用本地代理转发
-    #     client_max_body_size  1024m;  # 允许上传的文件大小，上传测试数据需要
-    #     proxy_pass  http://127.0.0.1:8000;
-    #     rewrite     ^/api/(.*)$  /$1  break;
-    # }
     location  /admin  {
-        # 使用 uwsgi
         include     uwsgi_params;
         uwsgi_pass  unix:/srv/socks/oj_backend.sock;
     }
-    # location  /admin  {
-    #     # 使用本地代理转发
-    #     proxy_pass  http://127.0.0.1:8000;
-    # }
     location  /static  {
         root  /path/to/backend;  # 需要在后端执行导出静态文件
     }
 }
 ```
+:::
+::: code-group-item 使用端口转发
+```nginx
+server {
+    listen         80;
+    server_name    localhost;
+    root           /path/to/frontend-naive/dist;
+    index          index.html;
+    location / {
+        try_files  $uri $uri/ /index.html;
+    }
+    location  /api  {
+        client_max_body_size  1024m;  # 允许上传的文件大小，上传测试数据需要
+        proxy_pass  http://127.0.0.1:8000;
+        rewrite     ^/api/(.*)$  /$1  break;
+    }
+    location  /admin  {
+        proxy_pass  http://127.0.0.1:8000;
+    }
+    location  /static  {
+        root  /path/to/backend;  # 需要在后端执行导出静态文件
+    }
+}
+```
+:::
+::::
 
 关于“使用 uwsgi”和“使用本地代理转发”的说明（可以先去看后端部署再回来看）：
 

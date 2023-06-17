@@ -55,7 +55,9 @@ TEST_CASE_DIR = Path(__file__).resolve().parent.parent / 'backend/judge_data/tes
 ...
 ```
 
-**注意：路径变量的类型必须为 **`**Path**`** 对象！**
+::: warning
+路径变量的类型必须为`Path`对象！
+:::
 
 ## 安装 Python 依赖
 
@@ -74,4 +76,6 @@ pip3 install -r requirements.txt  # 如果你不想用 root 的话
 sudo python3 server.py
 ```
 
-**已知问题：评测端在完成一定数量的评测后可能会出现对运行内存统计异常的问题（表现为提交莫名TLE），目前正在商讨解决方案中，暂时可通过定时任务重启评测端的方式解决此问题。**
+::: info
+已知问题：评测端在完成一定数量的评测后可能会出现对运行内存统计异常的问题（表现为提交莫名TLE），目前正在商讨解决方案中，暂时可通过定时任务重启评测端的方式解决此问题。
+:::

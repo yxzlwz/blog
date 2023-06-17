@@ -1,4 +1,7 @@
-# 后端
+---
+title: 后端
+date: 2023/06/17 17:09:06
+---
 
 ## 环境准备
 
@@ -18,7 +21,7 @@ sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
 
-# pip 换源
+# pip 换源（如果服务器在中国大陆）
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
@@ -33,7 +36,7 @@ systemctl stop redis-server  # 停止
 systemctl enable redis-server  # 开机自启
 ```
 
-以上代码在 WSL 中将无法正常工作，需要改用 `service redis-server [option]`
+以上代码**在 WSL 中将无法正常工作**，需要改用`service redis-server [option]`
 
 ### 安装 RabbitMQ
 
@@ -46,19 +49,17 @@ systemctl daemon-reload
 
 ### 安装 PostgreSQL
 
-> 仓库中的代码暂时只对 PostgreSQL 做了适配，若要使用 MySQL 等其它关系型数据库，请确保自己有能力完成代码修改。
+仓库中的代码暂时只对 PostgreSQL 做了适配，若要使用 MySQL 等其它关系型数据库，请确保自己有能力完成代码修改。
 
-安装和配置外网访问参考：
+安装和配置外网访问参考：[Debian 11 服务器配置日记](/blogs/20220816155931.html)
 
-[Debian 11 服务器配置日记_异想之旅的博客-CSDN博客_debian服务器配置](https://blog.csdn.net/weixin_44495599/article/details/126269602#PostgreSQL%20%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE)
-
-创建数据库和为用户授权参考：
-
-[MySQL 和 PostgreSQL 数据库的运维笔记_异想之旅的博客-CSDN博客_postgresql和mysql](https://blog.csdn.net/weixin_44495599/article/details/126375044)
+创建数据库和为用户授权参考：[MySQL 和 PostgreSQL 数据库的运维笔记](/blogs/20221003164442.html)
 
 准备好数据库和用户即完成此步骤，数据表的管理将在后面由 Django 负责。
 
-**务必记牢自己的用户名和密码！务必给准备使用的用户赋予准备使用的数据库上的所有权限！**
+::: warning
+务必记牢自己的用户名和密码！务必给准备使用的用户赋予准备使用的数据库上的所有权限！
+:::
 
 ## 克隆代码
 
@@ -66,31 +67,31 @@ systemctl daemon-reload
 
 ```bash
 git clone https://github.com/genuine-oj/backend.git
+# OR
 git clone https://ghproxy.com/https://github.com/genuine-oj/backend.git
-git clone https://git.qdzx.icu/genuine-oj/backend.git
 ```
 
 ## 安装 Python 依赖
 
-进入 `backend` 目录后：
+进入`backend`目录后：
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
-我在腾讯云的服务器上使用 Ubuntu 20.04 安装时遇到的报错及解决方案：
-
-[AttributeError: module ‘lib’ has no attribute ‘X509_V_FLAG_CB_ISSUER_CHECK’](https://stackoverflow.com/a/74243128/16145283)
+另贴出我在腾讯云的服务器上使用 Ubuntu 20.04 安装时遇到的报错及解决方案：[AttributeError: module ‘lib’ has no attribute ‘X509_V_FLAG_CB_ISSUER_CHECK’](https://stackoverflow.com/a/74243128/16145283)
 
 ## 生成密钥文件
 
-进入 `backend` 目录后：
+进入`backend`目录后：
 
 ```bash
 echo $(python3 -c "from django.core.management import utils;print(utils.get_random_secret_key())") > secret.key
 ```
 
-请**务必妥善保存生成的密钥文件** `secret.key` ，丢失密钥文件将导致严重的后果，包括但不限于数据库中保存的用户密码全部失效（即使你有数据库备份）。
+::: danger
+请务必妥善保存生成的密钥文件`secret.key`，丢失密钥文件将导致严重的后果，包括但不限于数据库中保存的用户密码全部失效（即使你有数据库备份）。
+:::
 
 ## 环境变量
 
@@ -98,14 +99,14 @@ echo $(python3 -c "from django.core.management import utils;print(utils.get_rand
 
 | 名称 | 说明 | 必填/默认值 |
 | --- | --- | --- |
-| OJ_MODE | 可选 DEVELOPMENT、TEST、PRODUCTION，其中 DEVELOPMENT 会使用 SQLite 数据库，DEVELOPMENT 和 TEST 都会配置 `DEBUG = True` | DEVELOPMENT |
+| OJ_MODE | 可选 DEVELOPMENT、TEST、PRODUCTION，其中 DEVELOPMENT 会使用 SQLite 数据库，DEVELOPMENT 和 TEST 都会配置`DEBUG = True`| DEVELOPMENT |
 | OJ_SQL_HOST | PostgreSQL HOST | localhost |
 | OJ_SQL_PORT | PostgreSQL PORT | 5432 |
 | OJ_SQL_USER | PostgreSQL 登录用户名 | 必填 |
 | OJ_SQL_PASSWORD | PostgreSQL 登录密码 | 必填 |
 | OJ_SQL_NAME | PostgreSQL 数据库名称 | oj |
-| OJ_PROBLEM_FILE_ROOT | 题目附件（由管理员在题目编辑页面上传，可供对该题目有访问权限的用户下载） | `BASE_DIR / 'problem_files'` |
-| OJ_JUDGE_DATA_ROOT | 题目的测试点数据，以及每个提交的数据输出 | `BASE_DIR / 'judge_data'` |
+| OJ_PROBLEM_FILE_ROOT | 题目附件（由管理员在题目编辑页面上传，可供对该题目有访问权限的用户下载） |`BASE_DIR / 'problem_files'`|
+| OJ_JUDGE_DATA_ROOT | 题目的测试点数据，以及每个提交的数据输出 |`BASE_DIR / 'judge_data'`|
 | OJ_ALLOW_REGISTER | 是否允许注册，应与前端配置文件中保持一致 | TRUE |
 | OJ_FORCE_HIDE_SUBMISSION | 是否强制隐藏所有提交（仅本人和管理员可见） | FALSE |
 
@@ -131,9 +132,11 @@ export OJ_ALLOW_REGISTER=TRUE  # 是否允许注册
 export OJ_FORCE_HIDE_SUBMISSION=FALSE  # 是否隐藏所有提交
 ```
 
-为了方便起见，可以在 `backend` 目录下创建一个文件 `production.env` ，这样子以后只需要执行 `source production.env` 即可完成设置。
+为了方便起见，可以在`backend`目录下创建一个文件`production.env`，这样子以后只需要执行`source production.env`即可完成设置。
 
-**注意：每次开启终端都需要执行一次 **`**source production.env**`** ！运行后端程序和启动 Celery 进程均需要正确的环境变量！！**
+::: warning
+每次开启终端都需要执行一次`source production.env`！运行后端程序和启动 Celery 进程均需要正确的环境变量！
+:::
 
 ## 初始化数据库
 
@@ -148,7 +151,7 @@ python3 manage.py migrate
 
 ## 设置评测数据路径
 
-默认情况下，`backend` 目录中会存在有如下的结构：
+默认情况下，`backend`目录中会存在有如下的结构：
 
 ```bash
 |-backend 后端程序根目录
@@ -158,37 +161,41 @@ python3 manage.py migrate
     |-submission 用户输出，可以存放于其他位置，需要修改SUBMISSION_ROOT
 ```
 
-这样子将应用程序和放在一起的做法自由度较低（例如需要将数据存放于系统盘之外的位置等），可以通过修改 `oj_backend/settings.py` 中的 `SPJ_ROOT` `TEST_DATA_ROOT` `SUBMISSION_ROOT` 三个变量指定位置。
+这样子将应用程序和放在一起的做法自由度较低（例如需要将数据存放于系统盘之外的位置等），可以通过修改`oj_backend/settings.py`中的`SPJ_ROOT``TEST_DATA_ROOT``SUBMISSION_ROOT`三个变量指定位置。
 
 你可以在此处自由设置存放位置，但是记得在评测端的配置文件中要设置与此处一致的值。
 
-> 小提示：注意中划线和下划线的区分！测试过程中我曾因为这个问题调了好久……
+::: tip
+注意路径配置中中划线和下划线的区分！测试过程中我曾因为这个问题调了好久...
+:::
 
 ## 导出静态文件
 
-在 `backend` 目录下：
+在`backend`目录下：
 
 ```bash
 python3 manage.py collectstatic
 ```
 
-如果需要更改这一目录，请在 `settings.py` 中更改 `STATIC_ROOT` 的值。
+如果需要更改这一目录，请在`settings.py`中更改`STATIC_ROOT`的值。
 
-这个配置用于保证 `/admin/` 界面工作正常，当且仅当部署时需要。
+这个配置用于保证`/admin/`界面工作正常，当 nginx 部署时需要。
 
 ## 创建第一个用户
 
-在 `backend` 目录下：
+在`backend`目录下：
 
 ```bash
 python3 manage.py createsuperuser
 ```
 
-此命令将用于创建一个超级用户。通过前端页面注册的用户不具有管理员权限，无法创建、管理题目、比赛等。
+此命令将用于创建一个超级用户。通过前端页面直接注册的用户不具有管理员权限，无法创建、管理题目、比赛等。
 
 ## 启动 celery 异步任务模块
 
-> 小提示：在测试时，可以使用 screen 工具来开启多个进程。
+::: tip
+在测试时，可以使用 screen 工具。
+:::
 
 ```bash
 celery -A oj_backend worker -l info -P eventlet  # windows
@@ -205,11 +212,9 @@ celery -A oj_backend worker -l info  #linux
 python3 manage.py runserver
 ```
 
-此处无需配置监听 `0.0.0.0` 也能正常在外网访问，因为我们访问后端时是通过前端项目的 `/api` 路径，数据需要经过前端服务器在本地转发。
+此处无需配置监听`0.0.0.0`也能正常在外网访问，因为我们访问后端时是通过前端项目的`/api`路径，数据需要经过前端服务器在本地转发。
 
 ## Django 应用的部署
-
-目前 Django 应用还未接入 WebSocket（可能以后也不会），因此可以直接通过 uWsgi 部署。
 
 ### 安装 uWsgi
 
@@ -219,7 +224,7 @@ pip3 install uwsgi
 
 ### 创建 uWsgi 配置文件
 
-下面的配置文件应存放于 `backend` 文件夹根目录中（别的地方也可以，但是路径就要自己试错去了哈哈哈）。
+下面的配置文件应存放于`backend`文件夹根目录中（别的地方也可以，但是路径就要自己试错去了哈哈哈）。
 
 ```bash
 [uwsgi]
@@ -228,7 +233,7 @@ pidfile=/srv/pids/oj_backend.pid  # 用于配置热重载
 chdir=/srv/oj/backend/  # backend 文件夹的绝对路径
 wsgi-file=oj_backend/wsgi.py  # wsgi 文件的路径，通常无需修改
 
-# 配置环境变量，将前面设置环境变量的语句中的 `export ` 替换为 `env=` 后粘贴至此即可
+# 配置环境变量，将前面设置环境变量的语句中的`export`替换为`env=`后粘贴至此即可
 env=OJ_MODE=production
 ...
 
@@ -244,13 +249,13 @@ logto=/dev/null  # 日志位置，按需填写
 
 ### 启动
 
-在 `backend` 目录下：
+在`backend`目录下：
 
 ```bash
 uwsgi --ini /srv/oj/backend/uwsgi.ini  # 上一步创建的配置文件所处的路径
 ```
 
-该命令将会阻塞运行，如有需要可通过检查 `socket` 和 `pidfile` 中指定的文件是否被创建来判断程序是否运行成功。
+该命令将会阻塞运行，如有需要可通过检查`socket`和`pidfile`中指定的文件是否被创建来判断程序是否运行成功。
 
 测试时可以使用 Linux 的 screen 工具来使该进程在后台运行，部署时建议使用 systemctl 管理。
 
@@ -265,4 +270,4 @@ uwsgi --stop /srv/pids/oj_backend.pid  # 停止
 
 ### Nginx 配置文件
 
-参考前端部署中的相关描述。
+参考[前端部署](./frontend.html)中的相关描述。
