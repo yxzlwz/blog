@@ -1,7 +1,7 @@
 import { defineUserConfig } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
 import katex from 'markdown-it-katex';
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
@@ -18,14 +18,6 @@ export default defineUserConfig({
         content: '异想之旅官网 异想之旅王子的技术分享博客',
       },
     ],
-    // [
-    //   'script',
-    //   {
-    //     async: true,
-    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-YNWN3VVCTL',
-    //   },
-    // ],
-    // ['script', { src: '/js/main.js', defer: true }],
   ],
   lang: 'zh-CN',
   theme: recoTheme({
@@ -36,6 +28,22 @@ export default defineUserConfig({
     lastUpdatedText: '',
     series: {
       '/docs/yxzl/projects/': ['yiyan', 'lightmysql', 'cloudreve'],
+      '/docs/genuine-oj/': [
+        { text: '简介', children: ['README', 'api'] },
+        {
+          text: '部署',
+          children: ['before_start', 'frontend', 'backend', 'judger'],
+        },
+        {
+          text: '使用教程和说明',
+          children: [
+            'about_hidden',
+            'add_judge_language',
+            'test_case',
+            'end_relationship',
+          ],
+        },
+      ],
     },
     navbar: [
       { text: 'Home', link: '/' },
