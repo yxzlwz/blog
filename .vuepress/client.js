@@ -1,5 +1,6 @@
-// import { onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { defineClientConfig, usePageData } from '@vuepress/client';
+import { polyfillCountryFlagEmojis } from 'country-flag-emoji-polyfill';
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -25,14 +26,9 @@ export default defineClientConfig({
     });
   },
   setup() {
-    // onMounted(() => {
-    //   window.dataLayer = window.dataLayer || [];
-    //   function gtag() {
-    //     dataLayer.push(arguments);
-    //   }
-    //   gtag('js', new Date());
-    //   gtag('config', 'G-YNWN3VVCTL');
-    // });
+    onMounted(() => {
+      polyfillCountryFlagEmojis();
+    });
   },
   rootComponents: [],
 });

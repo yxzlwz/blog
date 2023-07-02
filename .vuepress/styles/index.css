@@ -11,3 +11,7 @@
   /* background: url('//api.yixiangzhilv.com/utils/wallpaper'); */
   filter: brightness(50%) blur(3px);
 }
+
+.theme-reco-default-content {
+  font-family: 'Twemoji Country Flags';
+}
