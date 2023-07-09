@@ -112,7 +112,4 @@ export default defineUserConfig({
     md.set({ html: true });
     md.use(katex);
   },
-  extendsPage: page => {
-    page.data.tagline = '';
-  },
 });
