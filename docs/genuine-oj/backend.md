@@ -107,8 +107,12 @@ echo $(python3 -c "from django.core.management import utils;print(utils.get_rand
 | OJ_SQL_NAME | PostgreSQL 数据库名称 | oj |
 | OJ_PROBLEM_FILE_ROOT | 题目附件（由管理员在题目编辑页面上传，可供对该题目有访问权限的用户下载） |`BASE_DIR / 'problem_files'`|
 | OJ_JUDGE_DATA_ROOT | 题目的测试点数据，以及每个提交的数据输出 |`BASE_DIR / 'judge_data'`|
-| OJ_ALLOW_REGISTER | 是否允许注册，应与前端配置文件中保持一致 | TRUE |
-| OJ_FORCE_HIDE_SUBMISSION | 是否强制隐藏所有提交（仅本人和管理员可见） | FALSE |
+| OJ_ALLOW_REGISTER | 是否允许注册，应与前端设置保持一致 | TRUE |
+| OJ_FORCE_HIDE_SUBMISSION | 是否强制隐藏所有提交（隐藏后仅本人和管理员可见） | FALSE |
+
+::: info
+前端设置位置：在网站架设好后，登录管理员账号，鼠标移至右上角用户名处，选择弹出下拉菜单的站点管理，在其中配置并保存即可。
+:::
 
 下面是一个示例：
 
