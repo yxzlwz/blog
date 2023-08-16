@@ -48,6 +48,8 @@ export default defineUserConfig({
             '/docs/genuine-oj/add_judge_language.md',
             'test_case',
             'end_relationship',
+            'import_problem',
+            'bug_and_feature',
           ],
         },
       ],
