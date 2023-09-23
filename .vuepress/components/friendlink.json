@@ -25,6 +25,12 @@
       "description": "Keep looking don't settle",
       "url": "https://www.iwenson.com/",
       "logo": "https://www.iwenson.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddfikezfh%2Fimage%2Fupload%2Fv1673792150%2Fpeeps_avatar_alpha_a8cb7db025.png&w=640&q=75"
+    },
+    {
+      "title": "Reardon",
+      "description": "技术内容，生活分享",
+      "url": "https://blog.reardon.me/",
+      "logo": "https://blog.reardon.me/images/avatar.jpg"
     }
   ]
 }
