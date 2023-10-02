@@ -17,6 +17,20 @@ Genuine-OJ 是一个由 [@yang-zhongtian](https://github.com/yang-zhongtian) [@y
 - 评测端：Python3
 - 评测沙箱：C++
 
+## 演示站
+
+[首页 - Genuine OJ演示站](http://oj.yxzl.top/)
+
+请大家在测试时遵守天朝法律，同时不要以恶意刷数据等方式进行破坏，否则我们将不得不关闭演示站。
+
+如果你需要测试管理员功能，请注册好账号后发送邮件至 [mail@yixiangzhilv.com](mailto:mail@yixiangzhilv.com) 申请，邮件需注明以下内容：
+
+- 您的真实姓名和电话号码
+- 申请开通管理员权限的账号
+- 申请结束时间（您需要多久完成您的测试）
+
+我们将在收到邮件后尽快处理并回复您（一般不超过24小时）。
+
 ## 项目截图
 
 以下为 frontend-naive 的运行截图。frontend-naive 全局所有组件均完成了深色模式的适配，为节省篇幅，每个页面仅展示一种主题。
