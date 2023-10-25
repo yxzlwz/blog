@@ -208,6 +208,10 @@ celery -A oj_backend worker -l info  #linux
 
 该模块将通过 WebSocket 与评测端通信，用于将用户提交的代码交给评测端评测、接收评测端的返回数据并存入数据库中。
 
+::: warning
+请再次确认 Celery 的运行环境配置了正确的环境变量！
+:::
+
 ## 启动 Django 应用
 
 确保环境变量配置正确后：
