@@ -2,3 +2,5 @@
 .vuepress/.temp
 .vuepress/dist
 node_modules
+
+deploy.py
