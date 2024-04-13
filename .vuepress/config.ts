@@ -5,6 +5,8 @@ import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
+const hostname = 'https://www.yixiangzhilv.com';
+
 export default defineUserConfig({
   title: '异想之旅のBlog',
   shouldPrefetch: false,
@@ -99,17 +101,17 @@ export default defineUserConfig({
       id: 'G-YNWN3VVCTL',
     }),
     seoPlugin({
-      hostname: 'https://www.yixiangzhilv.com',
+      hostname: hostname,
       author: {
         name: '异想之旅王子',
         email: 'mail@yixiangzhilv.com',
       },
     }),
     sitemapPlugin({
-      hostname: 'https://www.yixiangzhilv.com',
+      hostname: hostname,
       changefreq: 'weekly',
     }),
-  ],
+      ],
   extendsMarkdown: md => {
     md.set({ html: true });
     md.use(katex);
