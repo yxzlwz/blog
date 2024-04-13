@@ -20,7 +20,7 @@ date: 2023/06/03
 
 若您的网站已添加异想之旅的友链，我会在看到后的第一时间添加您的友链并部署，如果没有的话加不加看我心情~
 
-添加异想之旅的友链时，请使用 <https://www.yixiangzhilv.com/> 地址，图标可使用下列任意文件：
+添加异想之旅的友链时，请使用 <https://blog.yixiangzhilv.com/> 地址，图标可使用下列任意文件：
 
-- <https://www.yixiangzhilv.com/logo.png> （透明背景）
-- <https://www.yixiangzhilv.com/head.png> （白色背景）
+- <https://blog.yixiangzhilv.com/logo.png> （透明背景）
+- <https://blog.yixiangzhilv.com/head.png> （白色背景）

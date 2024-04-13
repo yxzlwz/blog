@@ -5,7 +5,7 @@ import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
-const hostname = 'https://www.yixiangzhilv.com';
+const hostname = 'https://blog.yixiangzhilv.com';
 
 export default defineUserConfig({
   title: '异想之旅のBlog',
