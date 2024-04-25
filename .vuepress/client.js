@@ -8,7 +8,7 @@ export default defineClientConfig({
       polyfillCountryFlagEmojis();
 
       if (window.location.pathname === '/')
-        fetch('https://api.yixiangzhilv.com/yiyan/sentence/')
+        fetch('https://api.yixiangzhilv.com/yiyan/sentence/get/')
           .then(res => res.json())
           .then(data => {
             if (data.provenance && data.author) {
