@@ -79,8 +79,8 @@ export default defineUserConfig({
       },
     },
     algolia: {
-      appId: 'N32QD6F9U4',
-      apiKey: '2b0bc41ff2874019c52f998bd0d9ba89',
+      appId: 'JUYHKBPOI3',
+      apiKey: 'c091ec1bf2a040f0d4a7b149ac98085c',
       indexName: 'yixiangzhilv',
       inputSelector: '### REPLACE ME ####',
       algoliaOptions: { facetFilters: ['lang:$LANG'] },
