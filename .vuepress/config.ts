@@ -27,6 +27,7 @@ export default defineUserConfig({
     logo: '/logo.png',
     author: '异想之旅王子',
     authorAvatar: '/head.png',
+    repo: 'yxzlwz/blog',
     lastUpdatedText: '',
     series: {
       '/docs/yxzl/projects/': ['yiyan', 'lightmysql', 'cloudreve'],
@@ -111,7 +112,7 @@ export default defineUserConfig({
       hostname: hostname,
       changefreq: 'weekly',
     }),
-      ],
+  ],
   extendsMarkdown: md => {
     md.set({ html: true });
     md.use(katex);

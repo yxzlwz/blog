@@ -26,18 +26,15 @@ bannerBrand:
     - { text: 关于我, link: '/docs/yxzl/about.html' }
     # - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
   socialLinks:
-    - { icon: 'Github', link: 'https://github.com/yxzlwz' }
-    - { icon: 'Zhihu', link: 'https://www.zhihu.com/people/yxzlwz' }
-    - { icon: 'Tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAvr2qhC4swqmm4RwbEtvcRFutt_MxKrNptgwxH4eqIK0JQFdyNi-IziTTRbigwPRE' }
-    - { icon: 'Twitter', link: 'https://twitter.com/yxzlwz' }
+    - { icon: 'LogoGithub', link: 'https://github.com/yxzlwz' }
+    - { icon: 'LogoTwitter', link: 'https://twitter.com/yxzlwz' }
+    - { icon: 'LogoQuora', link: 'https://www.zhihu.com/people/yxzlwz' }
 blog:
   socialLinks:
-    - { icon: 'Github', link: 'https://github.com/yxzlwz' }
-    - { icon: 'Zhihu', link: 'https://www.zhihu.com/people/yxzlwz' }
-    - { icon: 'Tiktok', link: 'https://www.douyin.com/user/MS4wLjABAAAAvr2qhC4swqmm4RwbEtvcRFutt_MxKrNptgwxH4eqIK0JQFdyNi-IziTTRbigwPRE' }
-    - { icon: 'Twitter', link: 'https://twitter.com/yxzlwz' }
+    - { icon: 'LogoGithub', link: 'https://github.com/yxzlwz' }
+    - { icon: 'LogoTwitter', link: 'https://twitter.com/yxzlwz' }
+    - { icon: 'LogoQuora', link: 'https://www.zhihu.com/people/yxzlwz' }
 footer:
-  recordLink: https://beian.miit.gov.cn/
   startYear: 2018
 # isShowTitleInHome: true
 # actionText: About
