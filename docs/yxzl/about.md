@@ -3,6 +3,22 @@ title: 关于我
 date: 2023/05/28
 ---
 
+各个平台的我：
+
+- [GitHub](https://github.com/yxzlwz)
+- [Twitter](https://twitter.com/yxzlwz)（永远别想让我承认他叫X）
+- [CSDN](https://blog.csdn.net/weixin_44495599)
+- [Bilibili](https://space.bilibili.com/442614776)
+- [知乎](https://www.zhihu.com/people/yxzlwz)
+- [抖音](https://v.douyin.com/i2mVRwqe/)
+
+联系我：
+
+- [Email](mailto:mail@yixiangzhilv.com)
+- [Telegram](https://t.me/yxzlwz)
+
+---
+
 > 你好，我是异想之旅
 >
 > 热爱骑行和听歌的高中生，全栈开发&信竞选手，偶尔客串情感大师。
@@ -48,3 +64,4 @@ date: 2023/05/28
 **祝我23年省赛取得好成绩！**
 
 ![1685705731122](https://cdn.yixiangzhilv.com/images/0e417c9be12df5f37963a01a302416ab.jpg)
+

@@ -28,9 +28,10 @@ export default defineUserConfig({
     author: '异想之旅王子',
     authorAvatar: '/head.png',
     repo: 'yxzlwz/blog',
+    docsBranch: 'master',
     lastUpdatedText: '',
     series: {
-      '/docs/yxzl/projects/': ['yiyan', 'lightmysql', 'cloudreve'],
+      '/docs/yxzl/projects/': [ 'services', 'cloudreve','lightmysql', 'netdist'],
       '/docs/genuine-oj/': [
         'introduction',
         {
@@ -59,16 +60,10 @@ export default defineUserConfig({
     },
     navbar: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/docs/yxzl/projects/yiyan' },
+      { text: 'Projects', link: '/docs/yxzl/projects/services' },
       { text: 'About', link: '/docs/yxzl/about' },
       { text: 'Friend Link', link: '/docs/yxzl/friendlink' },
-      // {
-      //   text: 'Docs',
-      //   children: [
-      //     { text: 'vuepress-reco', link: '/docs/theme-reco/theme' },
-      //     { text: 'vuepress-theme-reco', link: '/blogs/other/guide' },
-      //   ],
-      // },
+      { text: 'Services', link: 'https://www.yixiangzhilv.com/' },
     ],
     commentConfig: {
       type: 'giscus',

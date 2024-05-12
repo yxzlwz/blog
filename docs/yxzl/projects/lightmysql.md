@@ -1,6 +1,5 @@
 ---
 title: lightmysql
-date: 2023/06/03 19:23:00
 ---
 
 [yxzlwz/lightmysql: A simple python package to use SQL database with python list and dict, rather than SQL language.](https://github.com/yxzlwz/lightmysql)
