@@ -1,8 +1,6 @@
 ---
 title: Windows治疗“嗜睡”问题-关闭自动睡眠和休眠
 date: 2024-05-12 12:20
-# categories:
-# - 转载
 tags:
 - Windows
 ---
