@@ -19,6 +19,12 @@
       "description": "printf(\"为了尚未完成的未来\");",
       "url": "https://yuxiaoqiu.cn/",
       "logo": "https://yuxiaoqiu.cn/upload/favicon.ico"
+    },
+    {
+      "title": "Yuzhen",
+      "description": "Student / OIer / Dev",
+      "url": "https://yuzhen.pub/",
+      "logo": "https://yuzhen.pub/upload/logo.jpg"
     }
   ]
 }
