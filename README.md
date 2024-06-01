@@ -27,13 +27,11 @@ bannerBrand:
     # - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/yxzlwz' }
-    - { icon: 'LogoTwitter', link: 'https://twitter.com/yxzlwz' }
-    - { icon: 'LogoQuora', link: 'https://www.zhihu.com/people/yxzlwz' }
+    - { icon: 'LogoTwitter', link: 'https://x.com/yxzlwz' }
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/yxzlwz' }
-    - { icon: 'LogoTwitter', link: 'https://twitter.com/yxzlwz' }
-    - { icon: 'LogoQuora', link: 'https://www.zhihu.com/people/yxzlwz' }
+    - { icon: 'LogoTwitter', link: 'https://x.com/yxzlwz' }
 footer:
   startYear: 2018
 # isShowTitleInHome: true
