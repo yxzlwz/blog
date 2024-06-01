@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress';
 import recoTheme from 'vuepress-theme-reco';
 import katex from 'markdown-it-katex';
+// import { viteBundler } from '@vuepress/bundler-vite';
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 import { seoPlugin } from 'vuepress-plugin-seo2';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
@@ -8,6 +9,7 @@ import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 const hostname = 'https://blog.yixiangzhilv.com';
 
 export default defineUserConfig({
+//   bundler: viteBundler(),
   title: '异想之旅のBlog',
   shouldPrefetch: false,
   head: [
@@ -31,7 +33,12 @@ export default defineUserConfig({
     docsBranch: 'master',
     lastUpdatedText: '',
     series: {
-      '/docs/yxzl/projects/': [ 'services', 'cloudreve','lightmysql', 'netdist'],
+      '/docs/yxzl/projects/': [
+        'services',
+        'cloudreve',
+        'lightmysql',
+        'netdist',
+      ],
       '/docs/genuine-oj/': [
         'introduction',
         {
