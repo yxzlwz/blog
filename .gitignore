@@ -4,4 +4,4 @@
 node_modules
 .yarn/
 
-deploy.py
+local/
