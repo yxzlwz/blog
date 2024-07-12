@@ -42,6 +42,6 @@ footer:
 <div style="margin-top: 20px; margin-bottom: -30px; display: flex; align-items: center; justify-content: center;">
 <span style="font-size: 2.5em">🇺🇦</span>
 <span style="margin-left: 1em">
-由于青岛市市南区网警的施压，此处的宣传条目已删除，<a href="https://www.zhihu.com/question/649395366/answer/3439670080">详见</a>。<br />Due to the pressure from the network police in Shinan District of Qingdao, the publicity items here have been deleted. <a href="https://www.zhihu.com/question/649395366/answer/3439670080">See details</a>.
+在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰。<br />Firmly stand with Ukraine against Russia's brutal invasion.
 </span>
 </div>
