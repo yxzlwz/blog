@@ -2,12 +2,11 @@
 title: Linux如何解决version GLIBCXX_3.4.29 not found的问题
 date: 2024-06-16 14:24
 tags:
-- 转载
 - C++
 - 运行环境
 ---
 
-本文转载自CSDN文章：<https://blog.csdn.net/weixin_39379635/article/details/129159713>。由于原作者的系统环境严重受到Anaconda污染，发布时对原文代码、截图等做了改动与补充。
+本文部分转载自CSDN文章：<https://blog.csdn.net/weixin_39379635/article/details/129159713>。由于原作者的系统环境严重受到Anaconda污染，发布时对原文代码、截图等做了改动与补充。
 
 特别提醒：**本文方法涉及到系统链接库的修改，可能会对系统稳定性造成影响。**
 
