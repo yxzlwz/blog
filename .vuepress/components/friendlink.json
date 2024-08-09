@@ -3,8 +3,8 @@
     {
       "title": "vuepress-reco",
       "description": "一款简洁的 vuepress 博客 & 文档 主题。",
-      "url": "https://vuepress-theme-reco.recoluan.com/",
-      "logo": "https://vuepress-theme-reco.recoluan.com/logo.png"
+      "url": "https://theme-reco.vuejs.press/",
+      "logo": "https://theme-reco.vuejs.press/logo.png"
     },
     {
       "title": "Hitokoto - 一言",
@@ -25,6 +25,12 @@
       "description": "求知若饥,虚心若愚",
       "url": "https://nickxu.me/",
       "logo": "https://nickxu.me/static/icon.png"
+    },
+    {
+      "title": "阿杜博客",
+      "description": "心有猛虎，细嗅蔷薇。",
+      "url": "https://adu88.top/",
+      "logo": "https://adu88.top/logo.png"
     }
   ]
 }
