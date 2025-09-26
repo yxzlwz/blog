@@ -4,7 +4,13 @@ createTime: 2024/05/25 16:45:56
 tags:
   - 转载
   - 杂谈
-
+copyright:
+  creation: reprint
+  source: https://mp.weixin.qq.com/s/afg3zHPpEyRzSfOR1Aeh3w
+  author: 何加盐
+  license:
+    name: 未知
+    url: null
 ---
 
 本文全文转载自微信公众号【何加盐】，原文链接：<https://mp.weixin.qq.com/s/afg3zHPpEyRzSfOR1Aeh3w>（原文已被删除）。

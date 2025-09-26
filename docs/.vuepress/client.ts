@@ -7,8 +7,6 @@ import { useRoute } from 'vue-router';
 // import NpmBadgeGroup from 'vuepress-theme-plume/features/NpmBadgeGroup.vue'
 // import Swiper from 'vuepress-theme-plume/features/Swiper.vue'
 
-// import CustomComponent from './theme/components/Custom.vue'
-
 import './style.scss';
 
 const updateYiyan = () => {
@@ -38,6 +36,24 @@ const updateYiyan = () => {
               data.from_show = `${data.from || data.from_who}`;
             }
             const yiyan = `${data.hitokoto} - 「${data.from_show}」`;
+            const element = document.getElementsByClassName('hero-text')[0];
+            element.innerHTML = yiyan;
+          });
+      });
+  } else if (window.location.pathname === '/en/') {
+    fetch('https://favqs.com/api/qotd')
+      .then(res => res.json())
+      .then(data => {
+        const yiyan = `${data.quote.body} - 「${data.body.author}」`;
+        const element = document.getElementsByClassName('hero-text')[0];
+        element.innerHTML = yiyan;
+      })
+      .catch(err => {
+        console.log(err);
+        fetch('https://thequoteshub.com/api/?format=json&lang=en')
+          .then(res => res.json())
+          .then(data => {
+            const yiyan = `${data.text} - 「${data.author}」`;
             const element = document.getElementsByClassName('hero-text')[0];
             element.innerHTML = yiyan;
           });

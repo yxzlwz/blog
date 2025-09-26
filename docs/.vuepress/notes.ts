@@ -4,7 +4,7 @@ import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume';
 
 export const zhNotes = defineNotesConfig({
   dir: 'docs',
-  link: '',
+  link: '/',
   notes: [],
 });
 
@@ -23,7 +23,7 @@ const enDemoNote = defineNoteConfig({
 });
 
 export const enNotes = defineNotesConfig({
-  dir: 'en/notes',
+  dir: 'en/docs',
   link: '/en/',
-  notes: [enDemoNote],
+  notes: [],
 });

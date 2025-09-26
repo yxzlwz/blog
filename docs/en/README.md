@@ -7,16 +7,16 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: A simple, feature-rich, document & blog
+      name: 异想之旅のBlog
+      # tagline: 异想之旅のBlog
+      text: Loading quote...
       actions:
         -
-          theme: brand
-          text: Blog
-          link: /en/blogs/
-        -
           theme: alt
-          text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          text: Blog
+          link: /blogs/
+        -
+          theme: brand
+          text: About
+          link: /about/
 ---

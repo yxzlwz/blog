@@ -17,10 +17,6 @@ export default defineThemeConfig({
   // aside: true, // 页内侧边栏， 默认显示在右侧
   // outline: [2, 3], // 页内大纲， 默认显示 h2, h3
 
-  /**
-   * 文章版权信息
-   * @see https://theme-plume.vuejs.press/guide/features/copyright/
-   */
   copyright: 'CC-BY-NC-SA-4.0',
 
   prevPage: false,
@@ -29,9 +25,6 @@ export default defineThemeConfig({
 
   locales: {
     '/': {
-      /**
-       * @see https://theme-plume.vuejs.press/config/basic/#profile
-       */
       profile: {
         avatar: '/head.png',
         name: '异想之旅',
@@ -47,12 +40,6 @@ export default defineThemeConfig({
         message: `<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰</span></div>`,
         copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
-      // bulletin: {
-      //   layout: 'top-right',
-      //   contentType: 'markdown',
-      //   title: '',
-      //   content: '',
-      // },
     },
     '/en/': {
       profile: {
@@ -66,7 +53,6 @@ export default defineThemeConfig({
 
       navbar: enNavbar,
       notes: enNotes,
-
       footer: {
         message:
           '<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>Firmly stand with Ukraine against Russia\'s brutal invasion.</span></div>',

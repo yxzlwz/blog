@@ -1,12 +1,17 @@
 ---
 title: 【转载】网号时代要来了，我的看法
-date: 2024-7-30
 contributors: 关尔东
 tags:
   - 转载
   - 杂谈
-createTime: 2025/09/22 21:38:38
-
+createTime: 2024/07/30
+copyright:
+  creation: reprint
+  source: https://c.m.163.com/news/a/J8BNUPA905567FJK.html
+  author: 关尔东
+  license:
+    name: 未知
+    url: null
 ---
 
 本文转载自网易新闻号关尔东：[网号时代要来了，我的看法](https://c.m.163.com/news/a/J8BNUPA905567FJK.html)，原文已被删除，[Google缓存地址](https://webcache.googleusercontent.com/search?q=cache:https://c.m.163.com/news/a/J8BNUPA905567FJK.html)。

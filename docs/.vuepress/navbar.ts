@@ -3,7 +3,6 @@ import { defineNavbarConfig } from 'vuepress-theme-plume';
 export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '博客', link: '/blogs/' },
-  { text: '标签', link: '/blogs/tags/' },
   { text: '关于', link: '/about/' },
   { text: '友链', link: '/friends/' },
   {
@@ -15,10 +14,10 @@ export const zhNavbar = defineNavbarConfig([
 export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/' },
   { text: 'Blog', link: '/en/blogs/' },
-  { text: 'Tags', link: '/en/blogs/tags/' },
-  { text: 'Archives', link: '/en/blogs/archives/' },
+  { text: 'About', link: '/en/about/' },
+  { text: 'Friends', link: '/en/friends/' },
   {
-    text: 'Notes',
-    items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }],
+    text: 'More',
+    items: [{ text: 'Python Tutorial', link: 'https://python.yxzl.dev/' }],
   },
 ]);

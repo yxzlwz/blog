@@ -12,7 +12,7 @@ export default defineUserConfig({
       description: '欢迎来到异想之旅的新家！',
     },
     '/en/': {
-      title: 'YXZL Blog',
+      title: '异想之旅のBlog',
       lang: 'en-US',
       description: "Welcome to YXZL's new place!",
     },
