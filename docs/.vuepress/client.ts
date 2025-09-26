@@ -41,22 +41,12 @@ const updateYiyan = () => {
           });
       });
   } else if (window.location.pathname === '/en/') {
-    fetch('https://favqs.com/api/qotd')
+    fetch('https://thequoteshub.com/api/?format=json&lang=en')
       .then(res => res.json())
       .then(data => {
-        const yiyan = `${data.quote.body} - 「${data.body.author}」`;
+        const yiyan = `${data.text} - 「${data.author}」`;
         const element = document.getElementsByClassName('hero-text')[0];
         element.innerHTML = yiyan;
-      })
-      .catch(err => {
-        console.log(err);
-        fetch('https://thequoteshub.com/api/?format=json&lang=en')
-          .then(res => res.json())
-          .then(data => {
-            const yiyan = `${data.text} - 「${data.author}」`;
-            const element = document.getElementsByClassName('hero-text')[0];
-            element.innerHTML = yiyan;
-          });
       });
   }
 };

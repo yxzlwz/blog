@@ -22,7 +22,6 @@ export default defineThemeConfig({
   prevPage: false,
   nextPage: false,
   createTime: true,
-
   locales: {
     '/': {
       profile: {
@@ -37,7 +36,7 @@ export default defineThemeConfig({
       navbar: zhNavbar,
       notes: zhNotes,
       footer: {
-        message: `<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰</span></div>`,
+        message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
         copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
     },
@@ -54,8 +53,7 @@ export default defineThemeConfig({
       navbar: enNavbar,
       notes: enNotes,
       footer: {
-        message:
-          '<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>Firmly stand with Ukraine against Russia\'s brutal invasion.</span></div>',
+        message: `<img src="/ua.svg" alt="Ukraine" /> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
         copyright: `©️ yxzlwz 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
     },
