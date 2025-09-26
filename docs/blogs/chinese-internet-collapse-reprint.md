@@ -13,12 +13,6 @@ copyright:
     url: null
 ---
 
-本文全文转载自微信公众号【何加盐】，原文链接：<https://mp.weixin.qq.com/s/afg3zHPpEyRzSfOR1Aeh3w>（原文已被删除）。
-
-本文内容直接来源于Archive Today：<https://archive.md/HoGem>。
-
----
-
 ![Alt text](../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)
 
 ## 1
@@ -212,3 +206,5 @@ copyright:
 原文截图：
 
 ![Alt text](../images/278a411ad3de518b5ba125b8afe5bb4f.png)
+
+本文内容直接来源于Archive Today：<https://archive.md/HoGem>。

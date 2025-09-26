@@ -3,6 +3,7 @@ title: 关于我
 aside: false
 createTime: 2025/09/23
 permalink: /about/
+copyright: false
 ---
 
 - [GitHub](https://github.com/yxzlwz)
@@ -25,7 +26,7 @@ permalink: /about/
 
 <img src="../../images/8a742574d87656246b104f9f43b43ebb.png" />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gCQuEakOEFo?si=Zb3vb0H2-NWZD3Ex" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 20px auto"></iframe>
+@[bilibili](BV1fd4y1T72J)
 
 ---
 

@@ -3,6 +3,7 @@ title: About Me
 aside: false
 createTime: 2025/09/23
 permalink: /en/about/
+copyright: false
 ---
 
 - [GitHub](https://github.com/yxzlwz)
@@ -14,3 +15,5 @@ permalink: /en/about/
 ---
 
 Qingdao Academy / New York University Shanghai co29
+
+@[youtube](gCQuEakOEFo)
