@@ -1,7 +1,7 @@
 ---
 title: Python计算Ant Puzzle日历拼图解法
 createTime: 2024/06/08 20:49:00
-categories:
+tags:
   - 杂谈
 
 ---

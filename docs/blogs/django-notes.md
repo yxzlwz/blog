@@ -1,7 +1,7 @@
 ---
 title: Django 小众问题集合
 createTime: 2024/05/17 15:13:00
-categories:
+tags:
   - 后端
 
 ---

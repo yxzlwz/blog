@@ -1,7 +1,7 @@
 ---
 title: 2024年高考游记
 createTime: 2024/06/10 17:17:00
-categories:
+tags:
   - 杂谈
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: 关于《中文互联网正在加速崩塌》的一些感想
 createTime: 2024/05/25 16:49:48
-categories:
+tags:
   - 杂谈
 
 ---

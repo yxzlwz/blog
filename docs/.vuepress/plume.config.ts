@@ -1,29 +1,19 @@
-/**
- * 查看以下文档了解主题配置
- * - @see https://theme-plume.vuejs.press/config/intro/ 配置说明
- * - @see https://theme-plume.vuejs.press/config/theme/ 主题配置项
- *
- * 请注意，对此文件的修改不会重启 vuepress 服务，而是通过热更新的方式生效
- * 但同时部分配置项不支持热更新，请查看文档说明
- * 对于不支持热更新的配置项，请在 `.vuepress/config.ts` 文件中配置
- *
- * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会覆盖 `.vuepress/config.ts` 文件中的配置
- */
-
 import { defineThemeConfig } from 'vuepress-theme-plume';
 import { enNavbar, zhNavbar } from './navbar';
 import { enNotes, zhNotes } from './notes';
 
-/**
- * @see https://theme-plume.vuejs.press/config/basic/
- */
 export default defineThemeConfig({
   // logo: '/head.png',
 
-  appearance: true, // 配置 深色模式
+  appearance: true,
 
-  social: [{ icon: 'github', link: 'https://github.com/yxzlwz' }],
-  // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
+  social: [
+    { icon: 'github', link: 'https://github.com/yxzlwz' },
+    { icon: 'twitter', link: 'https://twitter.com/yxzlwz' },
+    { icon: 'instagram', link: 'https://www.instagram.com/yxzlwz/' },
+    { icon: 'telegram', link: 'https://t.me/yxzlwz' },
+  ],
+  navbarSocialInclude: ['github'],
   // aside: true, // 页内侧边栏， 默认显示在右侧
   // outline: [2, 3], // 页内大纲， 默认显示 h2, h3
 
@@ -54,9 +44,8 @@ export default defineThemeConfig({
       navbar: zhNavbar,
       notes: zhNotes,
       footer: {
-        message:
-          '<div style="display: flex; align-items: center; justify-content: center; font-size: 1.1em"><span style="font-size: 1.7em">🇺🇦</span><span style="margin-left: .5em">在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰</span></div>',
-        copyright: '',
+        message: `<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰</span></div>`,
+        copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
       // bulletin: {
       //   layout: 'top-right',
@@ -80,8 +69,8 @@ export default defineThemeConfig({
 
       footer: {
         message:
-          '<div style="display: flex; align-items: center; justify-content: center; font-size: 1.1em"><span style="font-size: 1.7em">🇺🇦</span><span style="margin-left: .5em">Firmly stand with Ukraine against Russia\'s brutal invasion.</span></div>',
-        copyright: '',
+          '<div class="footer-ua"><img src="/ua.svg" alt="Ukraine" /><span>Firmly stand with Ukraine against Russia\'s brutal invasion.</span></div>',
+        copyright: `©️ yxzlwz 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
     },
   },

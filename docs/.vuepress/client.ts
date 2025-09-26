@@ -1,6 +1,7 @@
 import { defineClientConfig } from 'vuepress/client';
 import { onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
+
 // import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
 // import NpmBadge from 'vuepress-theme-plume/features/NpmBadge.vue'
 // import NpmBadgeGroup from 'vuepress-theme-plume/features/NpmBadgeGroup.vue'
@@ -8,7 +9,7 @@ import { useRoute } from 'vue-router';
 
 // import CustomComponent from './theme/components/Custom.vue'
 
-import './theme/styles/custom.css';
+import './style.scss';
 
 const updateYiyan = () => {
   console.log('updateYiyan');

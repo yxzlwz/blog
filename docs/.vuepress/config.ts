@@ -26,26 +26,29 @@ export default defineUserConfig({
   theme: plumeTheme({
     hostname: 'https://yxzl.dev',
 
-    docsRepo: 'blog-new',
+    docsRepo: 'yxzlwz/blog',
     docsDir: 'docs',
     docsBranch: 'main',
 
     editLink: true,
-    // lastUpdated: true,
+    lastUpdated: { formatOptions: { dateStyle: 'short', timeStyle: 'short' } },
     contributors: false,
     changelog: true,
 
     blog: {
-      postList: true, // 是否启用文章列表页
-      tags: false, // 是否启用标签页
-      archives: true, // 是否启用归档页
-      categories: true, // 是否启用分类页
-      postCover: 'right', // 文章封面位置
-      pagination: 15, // 每页显示文章数量
+      link: '/blogs/',
+      tagsLink: '/blogs/tags/',
+      tagsTheme: 'colored',
+      postList: true,
+      tags: true,
+      archives: true,
+      categories: false,
+      postCover: 'right',
+      pagination: 15,
     },
 
     /* 博客文章页面链接前缀 */
-    article: '/blog/',
+    article: '/blogs/',
 
     cache: 'filesystem',
 
@@ -55,19 +58,12 @@ export default defineUserConfig({
       title: true,
     },
 
-    search: { provider: 'local' },
-
-    /**
-     * Algolia DocSearch
-     * 启用此搜索需要将 本地搜索 search 设置为 false
-     * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
-     */
-    // search: {
-    //   provider: 'algolia',
-    //   appId: '',
-    //   apiKey: '',
-    //   indexName: '',
-    // },
+    search: {
+      provider: 'algolia',
+      appId: '6T04KIYWWA',
+      apiKey: 'bf499ff2ef33bee13e00afc00af7dd93',
+      indexName: 'blog-crawler',
+    },
 
     /**
      * Shiki 代码高亮
@@ -122,16 +118,16 @@ export default defineUserConfig({
     //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
     // },
 
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: 'Giscus',
+      comment: true,
+      repo: 'yxzlwz/blog',
+      repoId: 'R_kgDOJq1RYg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOJq1RYs4CW7t8',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'top',
+    },
   }),
 });

@@ -1,7 +1,7 @@
 ---
 title: 《民主的细节》一些感想和摘抄
 createTime: 2024/07/12 15:06:00
-categories:
+tags:
   - 杂谈
 
 ---

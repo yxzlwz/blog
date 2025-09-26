@@ -1,7 +1,7 @@
 ---
 title: 使用 GitHub Actions 和 GitHub Pages 部署 VuePress 项目
 createTime: 2025/09/23 15:57:00
-categories:
+tags:
   - 云服务与部署
 
 ---

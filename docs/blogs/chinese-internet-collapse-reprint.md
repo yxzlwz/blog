@@ -1,7 +1,7 @@
 ---
 title: 【转载】中文互联网正在加速崩塌
 createTime: 2024/05/25 16:45:56
-categories:
+tags:
   - 转载
   - 杂谈
 

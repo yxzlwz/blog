@@ -2,7 +2,7 @@
 title: 【转载】网号时代要来了，我的看法
 date: 2024-7-30
 contributors: 关尔东
-categories:
+tags:
   - 转载
   - 杂谈
 createTime: 2025/09/22 21:38:38

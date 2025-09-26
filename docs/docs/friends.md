@@ -1,0 +1,44 @@
+---
+title: 友情链接
+createTime: 2025/09/26 17:03:19
+pageLayout: friends
+permalink: /friends/
+groups:
+  - title: 朋友
+    list:
+      - name: Modenc
+        desc: 喜欢钻研各种新奇的东西。
+        link: https://modenc.top/
+        avatar: https://modenc.top/avatar.jpg
+      - name: NX の 博客
+        desc: 求知若饥,虚心若愚
+        link: https://nickxu.me/
+        avatar: https://nickxu.me/static/icon.png
+  - title: 项目
+    list:
+      - name: Plume 主题
+        desc: 一个简约易用的，功能丰富的 vuepress 文档&博客 主题
+        link: https://theme-plume.vuejs.press/
+        avatar: https://theme-plume.vuejs.press/plume.png
+      - name: Hitokoto - 一言
+        desc: 把句子汇聚起来，传递更多的感动。
+        link: https://hitokoto.cn/
+        avatar: https://hitokoto.cn/favicon.ico
+      - name: vuepress-reco
+        desc: 一款简洁的 vuepress 博客 & 文档 主题。
+        link: https://theme-reco.vuejs.press/
+        avatar: https://theme-reco.vuejs.press/logo.png
+---
+
+---
+
+<br />
+
+希望交换友链的朋友请通过如下两种方式提交：
+
+- 在本页面的评论区留言
+- 在 [GitHub](https://github.com/yxzlwz/blog/blob/master/.vuepress/components/friendlink.json) 上提交 Pull Request
+
+若您的网站已添加异想之旅的友链，我会在看到后的第一时间添加您的友链并部署。
+
+添加异想之旅的友链时，请使用 <https://blog.yxzl.dev/> 地址，图标请使用 <https://blog.yxzl.dev/head.png>。
