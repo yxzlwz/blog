@@ -1,7 +1,7 @@
 ---
 title: 三门问题的 Python 实验数据 & 直观但非严谨的证明
 createTime: 2022/08/16 15:08:40
-
+permalink: /article/h0h9d3hp/
 ---
 
 ## 原题描述

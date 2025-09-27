@@ -3,7 +3,7 @@ title: 使用 GitHub Actions 和 GitHub Pages 部署 VuePress 项目
 createTime: 2025/09/23 15:57:00
 tags:
   - 云服务与部署
-
+permalink: /article/xisaixvg/
 ---
 
 高考前的大半年停止了开发之后，终于在昨天由于大学生活的无聊准备重新捡起。饱受部署的各种问题折磨的我这次准备直接使用 GitHub。

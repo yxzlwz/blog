@@ -11,6 +11,7 @@ copyright:
   license:
     name: 未知
     url: null
+permalink: /article/kohgt7m2/
 ---
 
 ![](../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)

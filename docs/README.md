@@ -11,12 +11,13 @@ config:
       # tagline: 异想之旅のBlog
       text: 亿言加载中...
       actions:
-        -
-          theme: alt
+        - theme: brand
           text: 博客
-          link: /blogs/
-        -
-          theme: brand
+          link: /blog/
+        - theme: alt
           text: 关于我
           link: /about/
+        - theme: brand
+          text: English
+          link: /en/
 ---

@@ -14,6 +14,7 @@ copyright:
 badge:
   type: info
   text: Translation
+permalink: /en/article/532iw8xm/
 ---
 
 ::: warning

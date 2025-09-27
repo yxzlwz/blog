@@ -2,8 +2,8 @@
 title: About Me
 aside: false
 createTime: 2025/09/23
-permalink: /en/about/
 copyright: false
+permalink: /en/about/
 ---
 
 - [GitHub](https://github.com/yxzlwz)

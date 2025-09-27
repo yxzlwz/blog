@@ -1,7 +1,7 @@
 ---
 title: Linux如何解决version GLIBCXX_3.4.29 not found的问题
 createTime: 2024/06/16 14:24:00
-
+permalink: /article/0ed1ik0d/
 ---
 
 本文部分转载自CSDN文章：<https://blog.csdn.net/weixin_39379635/article/details/129159713>。由于原作者的系统环境严重受到Anaconda污染，发布时对原文代码、截图等做了改动与补充。

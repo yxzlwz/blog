@@ -45,16 +45,16 @@ export default defineUserConfig({
       categories: false,
       postCover: 'right',
       pagination: 15,
-      exclude: ['.vuepress/', '**/README.md', 'archive/'],
+      exclude: ['.vuepress/', '**/README.md', 'archive/**.md'],
     },
 
     /* 博客文章页面链接前缀 */
-    article: '/blogs/',
+    // article: '/article/',
 
     cache: 'filesystem',
 
     autoFrontmatter: {
-      permalink: false,
+      permalink: true,
       createTime: true,
       title: true,
     },

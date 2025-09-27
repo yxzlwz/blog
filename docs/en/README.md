@@ -12,11 +12,14 @@ config:
       text: Loading quote...
       actions:
         -
-          theme: alt
+          theme: brand
           text: Blog
           link: /en/blogs/
         -
-          theme: brand
+          theme: alt
           text: About
           link: /en/about/
+        - theme: brand
+          text: 中文
+          link: /
 ---

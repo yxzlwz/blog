@@ -6,6 +6,7 @@ tags:
 badge:
   type: info
   text: Translation
+permalink: /en/article/n58kvbsq/
 ---
 
 ::: warning

@@ -1,37 +1,26 @@
 ---
-title: 无需申请：Vuepress 配置 Algolia 搜索
-createTime: 2023/06/07 20:35:24
+title: 更新：Vuepress 配置 Algolia 搜索
+createTime: 2025/09/27
 tags:
   - 前端
+permalink: /article/0bfq6fvy/
 ---
 
-> 今天是2023年高考的第一天，身为高一学生的我也报名去体验了一下，感觉山东今年的语文和数学题都不是很难（至少比一模二模都简单）（当然我的成绩肯定是很糟糕）
->
-> 祝愿所有考生都能取得好成绩！
+我曾在2023年6月7日写过一篇介绍 Vuepress 中 Algolia 配置的[文章](/article/379iguya/)。前两天，当我换了新域名 yxzl.dev 之后，想要再遵循这一流程居然失败了。经过一系列折腾，写出了下面这篇新文章。
 
-## 这是什么
+## 创建应用
 
-Algolia DocSearch 官网的 Slogan 是这样的：Free Algolia Search For Developer Docs，也就是说，Algolia 为开发者提供免费的搜索服务。
+首先访问 [DocSearch 主页](https://docsearch.algolia.com/)，在此页面点击“Sign Up”，经过一系列注册和登录操作后，你应该能看到如下界面：
 
-事实上这就是一个针对某个站点的搜索引擎，他会和搜索引擎一样对你的网站进行爬取，随后会向你提供一个 API 接口，用户在你的网站上搜索时只需调用该 API 即可。
+![](images/image.png)
 
-可别小看它，下面的这些项目都采用了他们的服务：
+随便起一个名字，然后点击下一步即可。创建过程可能会略有点慢，创建成功后页面会自动重定向。我曾遇到地区选择美国东部卡死在创建流程的情况，换到西欧就正常了。
 
-![](../images/9dcda85161e722dc9d08ab77c507cea4.png)
+下一步是添加域名，添加域名后需要进行审核（通常很快）；与此同时，你还需要验证域名所有权，绝大多数情况下可以通过 DNS TXT 解析，但我也有遇到这一方法始终验证不通过的情况，此时用 HTML 验证即可（可以通过 GitHub Pages 完成）。
 
-另外在开始正文前特别说明一点：虽然文档搜索（DocSearch）是我们很多人对 Algolia 唯一的了解，但他们的业务不止于此。
+## 获取API信息
 
-## 如何使用
-
-本文介绍的是向官方申请爬取的访问方式。根据其文档，你也可以自己运行爬虫后将数据上传到 Algolia 获取服务，有需要的请自行阅读研究：[Run your own | DocSearch by Algolia](https://docsearch.algolia.com/docs/legacy/run-your-own/)
-
-### 申请爬取
-
-首先访问 [DocSearch by Algolia](https://docsearch.algolia.com/)，在此页面点击“Apply”，填写你的网站地址、邮箱以及开源地址（DocSearch 要求你的网站必须是开源的）。
-
-申请后只需要等待官方给你发来邮件就可以了。Algolia 会发来两封邮件，分别告知你申请通过和爬取完成，根据本人经验这两封邮件的送达时间相差不超过15分钟。在收到第一封邮件前，我的等待时长为三天。
-
-### 获取API信息
+访问 <https://dashboard.algolia.com/account/api-keys> 即可查看应用的 appId（Application ID）和 apiKey（Search API Key），这两项通常是 Vuepress 项目配置必要的。
 
 在官方发来的邮件中，提取出 `appId` `apiKey` 和 `indexName` 三个信息，然后根据自己使用的 Vuepress 框架的文档进行配置即可。
 
@@ -39,48 +28,44 @@ Algolia DocSearch 官网的 Slogan 是这样的：Free Algolia Search For Develo
 
 配置完成后，请尝试搜索一个关键词（确保你的网站中有文档包含这一关键词），如果正常返回了搜索结果，那么恭喜你已经完成了配置；如果你和我一样，搜什么都是 No Results，那么请继续往下看。
 
-### 修改爬取配置
+## 创建和配置爬虫
 
-为什么完成爬取后仍然什么也搜不到？这是因为 Algolia 爬取时，只将每个页面匹配指定的元素选择器的元素下的文字建立索引，因此对于大多数情况我们需要手动指定选择器。
+在控制台中，点击左下角的 Data Sources 按钮，再点击 Crawler，即可添加或管理爬虫。
 
-配置地址：[Crawlers | Crawler Admin Console](https://crawler.algolia.com/admin/users/login)
+![](images/image-1.png)
 
-在首页，点击你的应用程序，然后在新页面中点击左侧的 Editor：
 
-![](../images/b811396c11a5e8cad92611424487e03c.png)
+点击创建好的爬虫，进入配置界面，在左侧菜单中点击 Editor，会进入一个代码编辑界面。代码很长，我们只关心前面的这一部分：
 
-![](../images/df9f53ae786373b07349636ee80c0f25.png)
-
-在配置界面中是一个很长的 JS 文件，我们只需要关注前面这一部分：
-
-```javascript
+```js
 new Crawler({
+  appId: "6T04KIYWWA",
+  indexPrefix: "",
   rateLimit: 8,
   maxDepth: 10,
-  maxUrls: 5000,
-  startUrls: ["https://blog.yixiangzhilv.com/"],
+  maxUrls: null,  // [!code highlight]
+  schedule: "on monday",  // [!code highlight]
+  startUrls: ["https://blog.yxzl.dev"],  // [!code highlight]
   renderJavaScript: false,
-  sitemaps: ["https://blog.yixiangzhilv.com/sitemap.xml"],
+  sitemaps: ["https://blog.yxzl.dev/sitemap.xml"],  // [!code highlight]
   ignoreCanonicalTo: true,
-  discoveryPatterns: ["https://blog.yixiangzhilv.com/**"],
-  schedule: "at 12:20 on Monday",
   actions: [
     {
-      indexName: "yixiangzhilv",
-      pathsToMatch: ["https://blog.yixiangzhilv.com/**"],
+      indexName: "blog-crawler",  // [!code highlight]
+      pathsToMatch: ["https://blog.yxzl.dev/**"],  // [!code highlight]
       recordExtractor: ({ helpers }) => {
         return helpers.docsearch({
           recordProps: {
-            lvl1: ".page-container h1",
-            content: ".theme-reco-default-content p, .content__default li",
+            lvl1: ".page-container h1",  // [!code highlight]
+            content: ".page-container p",  // [!code highlight]
             lvl0: {
               selectors: "p.sidebar-heading.open",
               defaultValue: "Documentation",
             },
-            lvl2: ".theme-reco-default-content h2",
-            lvl3: ".theme-reco-default-content h3",
-            lvl4: ".theme-reco-default-content h4",
-            lvl5: ".theme-reco-default-content h5",
+            lvl2: ".page-container h2",  // [!code highlight]
+            lvl3: ".page-container h3",  // [!code highlight]
+            lvl4: ".page-container h4",  // [!code highlight]
+            lvl5: ".page-container h5",  // [!code highlight]
             lang: "",
             tags: {
               defaultValue: ["v1"],
@@ -91,74 +76,35 @@ new Crawler({
       },
     },
   ],
-  ...
-}
+...
 ```
 
-其中`startUrls` `pathsToMatch`等参数大家根据自己需要配置即可，需要注意的就是某些时候可能初次生成的文档中这里列举的 URL 不是网站根目录，而是`/docs/**`等，大家注意甄别。另外，如果是前端渲染的项目，需要开启`renderJavaScript`选项（2023.7.12补充：我最开始没开启也成功了，后来开始报错，才发现这个问题，不知道之前为什么不开启也可以）
+代码中高亮的即为我们需要修改的部分：
 
-我们重点要关注的是`recordProps`。下面我放出我拿到的默认配置和我修改后的配置，大家可以对比一下：
+- `maxUrls`：初始值通常是一个较小的数字，供测试使用，测试结束后应配置为 `null`
+- `schedule`：Algolia 爬取你网站的频次。这一数值可以在网站中的 Configuration 界面使用图形化工具修改。
+- `startUrls`：爬虫爬取的入口，通常配置为网站首页即可
+- `sitemaps`：网站地图的链接，没有可以设置为空数组。Vuepress 现在提供了非常简单的方式生成站点地图，建议大家进行配置。
+- `indexName`：默认值与爬虫名称相同，通常情况下无需进行修改。这个值也需要写到 Vuepress 的配置文件中。
+- `oathsToMatch`：哪些格式的链接会被爬取，无特殊需求照抄我这样的格式即可。
+- `recordProps` 中的内容：这些参数配置爬虫如何从你的界面中找到各级标题和正文。对于大多数 Vuepress 站点，应该可以直接照抄上方配置（下文会给出测试方法，如果测试不通过你再修改也来得及）
 
-:::: code-group
-::: code-group-item 默认配置
+::: details 如何找到 recordProps 应配置的值
 
-```javascript
-recordProps: {
-  lvl1: ".content__default h1",
-  content: ".content__default p, .content__default li",
-  lvl0: {
-    selectors: "p.sidebar-heading.open",
-    defaultValue: "Documentation",
-  },
-  lvl2: ".content__default h2",
-  lvl3: ".content__default h3",
-  lvl4: ".content__default h4",
-  lvl5: ".content__default h5",
-  lang: "",
-  tags: {
-    defaultValue: ["v1"],
-  },
-},
-```
-
-:::
-::: code-group-item 修改后的配置
-
-```javascript
-recordProps: {
-  lvl1: ".page-container h1",
-  content: ".theme-reco-default-content p, .content__default li",
-  lvl0: {
-    selectors: "p.sidebar-heading.open",
-    defaultValue: "Documentation",
-  },
-  lvl2: ".theme-reco-default-content h2",
-  lvl3: ".theme-reco-default-content h3",
-  lvl4: ".theme-reco-default-content h4",
-  lvl5: ".theme-reco-default-content h5",
-  lang: "",
-  tags: {
-    defaultValue: ["v1"],
-  },
-},
-```
-
-:::
-::::
-
-看出区别了吗？其实就是我们需要根据自己网站的正文在 HTML 文档中的所处元素位置来告诉 Algolia 要从什么元素提取文字。如对于我使用的 vuepress-theme-reco 主题，就需要从 `.theme-reco-default-content` 中提取：
+以 vuepress-theme-reco 主题为例，打开任意文章后，使用浏览器检查工具，我们可以看到所有内容都被包裹在 `.theme-reco-default-content` 中：
 
 ![](../images/f6cc57aab54a725d54b7eec846a3c806.png)
 
+此时就可以把上面配置中的所有 `.page-container` 替换为 `.theme-reco-default-content`。
+
+:::
+
 修改好后，在网站右侧的 URL Tester 中可以输入自己网站某个界面的网址进行测试（注意选择正文界面而非首页，毕竟首页并没有东西用来建索引），如果看到 Records 中有内容就是成功啦。
 
-![](../images/50521c91af864625ebb630d42197a4dd.png)
+![图片仅供参考，配置信息以上文代码块为准](../images/50521c91af864625ebb630d42197a4dd.png)
 
-在此之后点击上图中 4 标注的小眼睛回到 Overview 界面，点击右上角的 Restart crawling 按钮重新启动爬虫，然后耐心等待爬取完成就可以啦！
+此时先别着急离开，**一定要点击右下角的 Publish 按钮**，内容才会保存。
+
+在此之后点击上图中 4 标注的小眼睛回到 Overview 界面，点击右上角的按钮重新启动爬虫，然后耐心等待爬取完成就可以啦！
 
 ![](../images/5763369b867ee40f08d0d3e8c1a98066.png)
-
-## 参考资料
-
-- [默认主题配置 | VuePress](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#algolia-%E6%90%9C%E7%B4%A2)
-- [VuePress 不用Algolia 全文搜索那就缺了灵魂 - 掘金](https://juejin.cn/post/7110518413839040519)

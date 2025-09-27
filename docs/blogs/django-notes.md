@@ -3,7 +3,7 @@ title: Django 小众问题集合
 createTime: 2024/05/17 15:13:00
 tags:
   - 后端
-
+permalink: /article/th7tsaev/
 ---
 
 ## 使用 Database 作为缓存

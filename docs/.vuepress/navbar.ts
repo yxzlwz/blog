@@ -2,7 +2,7 @@ import { defineNavbarConfig } from 'vuepress-theme-plume';
 
 export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/' },
-  { text: '博客', link: '/blogs/' },
+  { text: '博客', link: '/blog/' },
   { text: '关于', link: '/about/' },
   { text: '友链', link: '/friends/' },
   {
@@ -13,7 +13,7 @@ export const zhNavbar = defineNavbarConfig([
 
 export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/' },
-  { text: 'Blog', link: '/en/blogs/' },
+  { text: 'Blog', link: '/en/blog/' },
   { text: 'About', link: '/en/about/' },
   { text: 'Friends', link: '/en/friends/' },
   {

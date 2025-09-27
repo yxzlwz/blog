@@ -4,6 +4,7 @@ createTime: 2022/08/16 15:08:40
 badge:
   type: info
   text: Translation
+permalink: /en/article/l0sb1tgc/
 ---
 
 ::: warning
