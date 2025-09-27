@@ -13,7 +13,7 @@ copyright:
     url: null
 ---
 
-![Alt text](../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)
+![](../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)
 
 ## 1
 
@@ -25,13 +25,13 @@ copyright:
 
 但实际上能搜出的全部结果如下：
 
-![Alt text](../images/6e4952708dcd72a0ca826474ad2a52de.png)
+![](../images/6e4952708dcd72a0ca826474ad2a52de.png)
 
 用百度搜索，选定日期范围为“1998年5月22日到2005年5月22日”，含有马云的信息，总共是1条（2024年5月22日数据）。
 
 而仅有的这一条信息，也是虚假的。点进去会发现，文章的发布时间其实是2021年，不属于上面限定的时间段，只是不知怎么回事，它被莫名其妙地搜索出来。
 
-![Alt text](../images/cecfcb9259a71fd608e38616aaf4cf7f.png)
+![](../images/cecfcb9259a71fd608e38616aaf4cf7f.png)
 
 也就是说，如果我们想要了解那一段时间关于马云的经历、报道、人们对他的讨论、他的讲话、公司的发展史等等，我们能得到的有效的原始信息量，是零。
 
@@ -43,7 +43,7 @@ copyright:
 
 但实际上，不仅仅是马云的情况如此，我们去搜马化腾、雷军、任正非等，甚至是罗永浩和芙蓉姐姐这样在那个时候红极一时的网红，或周杰伦、李宇春那样曾经火遍全网的明星，结果也都一样的。如搜雷军的情况，结果是这样的：
 
-![Alt text](../images/1c54501ae51ac05a7935cd8c5e452b48.png)
+![](../images/1c54501ae51ac05a7935cd8c5e452b48.png)
 
 在测试过不同网站、不同人名、不同时间段之后，我发现一个令人震惊的现象：
 
@@ -205,6 +205,6 @@ copyright:
 
 原文截图：
 
-![Alt text](../images/278a411ad3de518b5ba125b8afe5bb4f.png)
+![](../images/278a411ad3de518b5ba125b8afe5bb4f.png)
 
 本文内容直接来源于Archive Today：<https://archive.md/HoGem>。

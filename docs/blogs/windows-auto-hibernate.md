@@ -8,7 +8,7 @@ createTime: 2024/05/12 12:20:00
 
 如图，正常的操作是在Windows设置中更改电脑在无操作时关闭屏幕和进入睡眠的时间。若要保证电脑的远程桌面随时可用，这里的插电时自动睡眠时间应选择Never（从不）。
 
-![alt text](../images/8e1071a93ed16d7ab1c93b16669de1b2.png)
+![](../images/8e1071a93ed16d7ab1c93b16669de1b2.png)
 
 然而，如果你的电脑支持休眠，那么还有一个“自动进入休眠”的选项不会在Windows设置中显示，需要前往控制面板修改。
 
@@ -16,11 +16,11 @@ createTime: 2024/05/12 12:20:00
 
 打开控制面板，选择“系统和安全”，然后选择“电源选项”，在打开的界面中点击Change plan settings（由于我的电脑是英文系统，大家根据大致翻译和按钮位置对应即可）
 
-![alt text](../images/6c4d022a1a169a11503c238191ae5816.png)
+![](../images/6c4d022a1a169a11503c238191ae5816.png)
 
 在打开的界面中，我们可以看到和Windows设置中一样的4个选项。紧接着点击Change advanced power settings（凭我的印象，这个选项的中文名应该是“更改高级电源选项”），在打开的窗口中找到睡眠，并将插电时的自动睡眠和自动休眠全部设置为Never（此处不会为你提供这个选项，你只需要输入数字0，点击确定后Windows会自动处理）
 
-![alt text](../images/bdadb4d4fbc57a6d1fd4b7df9975c527.png)
+![](../images/bdadb4d4fbc57a6d1fd4b7df9975c527.png)
 
 ---
 

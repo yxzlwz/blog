@@ -139,8 +139,8 @@ No change: 3333
 
 ### 最朴素的树状图角度理解
 
-![img](../images/2c679700e984515451c8c51b3fcdbbb0.png)
+![](../images/2c679700e984515451c8c51b3fcdbbb0.png)
 
-![img](../images/69c98359b8db273d47a30998b0d5f978.png)
+![](../images/69c98359b8db273d47a30998b0d5f978.png)
 
 图片来源：[“三门问题”的理解_weixin_42467709的博客-CSDN博客_三门问题](https://blog.csdn.net/weixin_42467709/article/details/82882617)

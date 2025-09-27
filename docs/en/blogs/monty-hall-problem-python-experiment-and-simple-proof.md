@@ -149,8 +149,8 @@ The logic is identical when scaling down to 3 doors.
 
 ### From a Simple Tree Diagram
 
-![img](../../images/2c679700e984515451c8c51b3fcdbbb0.png)
+![](../../images/2c679700e984515451c8c51b3fcdbbb0.png)
 
-![img](../../images/69c98359b8db273d47a30998b0d5f978.png)
+![](../../images/69c98359b8db273d47a30998b0d5f978.png)
 
 Image source: <https://blog.csdn.net/weixin_42467709/article/details/82882617>

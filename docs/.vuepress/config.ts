@@ -33,11 +33,11 @@ export default defineUserConfig({
     editLink: true,
     lastUpdated: { formatOptions: { dateStyle: 'short', timeStyle: 'short' } },
     contributors: false,
-    changelog: true,
+    changelog: false,
 
     blog: {
-      link: '/blogs/',
-      tagsLink: '/blogs/tags/',
+      link: '/blog/',
+      tagsLink: '/blog/tags/',
       tagsTheme: 'colored',
       postList: true,
       tags: true,
@@ -45,6 +45,7 @@ export default defineUserConfig({
       categories: false,
       postCover: 'right',
       pagination: 15,
+      exclude: ['.vuepress/', '**/README.md', 'archive/'],
     },
 
     /* 博客文章页面链接前缀 */

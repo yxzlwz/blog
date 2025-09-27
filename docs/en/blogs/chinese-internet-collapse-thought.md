@@ -18,11 +18,11 @@ I learned about this article from Twitter after it was deleted, and after readin
 
 Before starting, I want to criticize one point of the original text. I consider myself relatively familiar with internet trends, but the data provided in the original text surprised me. I always thought that the content of websites operated by some major companies from ten or twenty years ago should still exist. Facts have confirmed my thought. Below are the results I obtained on May 25, 2024, by searching the keyword "马云 (Jack Ma)" on Baidu, Bing (non-Chinese version), and Google, with the time limited to January 1, 2000, to January 1, 2006.
 
-![Alt text](../../images/422a0563932f57cd692f20992bf5ba9b.png)
+![](../../images/422a0563932f57cd692f20992bf5ba9b.png)
 
-![Alt text](../../images/c5100754a1ed190b265baddc79603ef3.png)
+![](../../images/c5100754a1ed190b265baddc79603ef3.png)
 
-![Alt text](../../images/fa140e6215ff2fd25b5f4bccb26b2915.png)
+![](../../images/fa140e6215ff2fd25b5f4bccb26b2915.png)
 
 Among them, Google, which displays the number of results, claimed to have found 4,760 results. **It is clear that the situation is not as dire as described by the original author.** Whether the original author was insufficiently careful in testing during writing or for marketing purposes, we do not know. To control variables, I also checked the specific times of the search results, and the vast majority of Bing and Google's search results were also within the time range selected by the original author for testing.
 

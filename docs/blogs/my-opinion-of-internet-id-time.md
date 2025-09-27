@@ -1,6 +1,5 @@
 ---
 title: 【转载】网号时代要来了，我的看法
-contributors: 关尔东
 tags:
   - 转载
   - 杂谈

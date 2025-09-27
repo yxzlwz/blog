@@ -22,7 +22,7 @@ The content was translated from the Chinese version by Generative AI. Please dou
 
 ---
 
-![Alt text](../../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)
+![](../../images/a2af859f409ed3c2fbbd6ba80cc5fc22.png)
 
 ## 1
 
@@ -34,13 +34,13 @@ I’ve asked in several groups, and people generally guess it should be in the m
 
 But the actual total results are as follows:
 
-![Alt text](../../images/6e4952708dcd72a0ca826474ad2a52de.png)
+![](../../images/6e4952708dcd72a0ca826474ad2a52de.png)
 
 Searching Baidu with the date range "May 22, 1998 to May 22, 2005" for content containing "马云" yields a total of 1 result (data as of May 22, 2024).
 
 And this sole result is also false. Clicking in reveals the article was actually published in 2021, outside the specified time range, yet somehow mistakenly included in the search results.
 
-![Alt text](../../images/cecfcb9259a71fd608e38616aaf4cf7f.png)
+![](../../images/cecfcb9259a71fd608e38616aaf4cf7f.png)
 
 In other words, if we want to learn about Jack Ma’s experiences, media coverage, public discussions, speeches, or his company’s development during that period, the amount of valid original information we can obtain is zero.
 
@@ -52,7 +52,7 @@ You might also wonder, "Could it be because Jack Ma is controversial, and for so
 
 But in reality, this isn’t unique to Jack Ma. Searching for Pony Ma, Lei Jun, Ren Zhengfei, even internet celebrities like Luo Yonghao and Sister Lotus who were popular back then, or stars like Jay Chou and Li Yuchun who once dominated the web, yields the same result. For example, searching for Lei Jun shows:
 
-![Alt text](../../images/1c54501ae51ac05a7935cd8c5e452b48.png)
+![](../../images/1c54501ae51ac05a7935cd8c5e452b48.png)
 
 After testing different websites, names, and time periods, I discovered a shocking phenomenon:
 
@@ -92,7 +92,7 @@ First, economic factors.
 
 Websites require servers, bandwidth, data centers, maintenance personnel, and various regulatory compliance costs—all expenses. If a site has strategic value (e.g., displaying desired corporate information) or short-term traffic value (e.g., consistent visitor numbers), and the company has sufficient funds, there’s incentive to maintain it.
 
-But if a company stumbles commercially and runs out of money, the entire website dies. Renren is a典型 example.
+But if a company stumbles commercially and runs out of money, the entire website dies. Renren is a typical example.
 
 Even if a company has funds, from an operational perspective, a webpage with negligible annual clicks becomes a burden. The economically rational choice is to shut it down. The loss of early content on Sohu/NetEase and the collapse of BBS platforms like Tianya Forum stem from this.
 
@@ -151,7 +151,7 @@ What if Zhihu vanishes like Tianya, Douban disappears like Renren, or Bilibili f
 
 What if your favorite Weibo blogger only shows "Author only displays posts from the past six months; this post is unavailable," your go-to official accounts shows "Account blocked; content inaccessible," or searching Douyin/Xiaohongshu yields "Author has cleared all content"?
 
-What if Weibo, WeChat公众号, Douyin, and Xiaohongshu all perish like BBS, Tieba, Qzone, and blogs before them?
+What if Weibo, WeChat Official Accounts, Douyin, and Xiaohongshu all perish like BBS, Tieba, Qzone, and blogs before them?
 
 Would you grieve for even a minute?
 
@@ -211,6 +211,6 @@ Nearly everything you see and create today—including this article and platform
 
 Screenshot of the original article:
 
-![Alt text](../../images/278a411ad3de518b5ba125b8afe5bb4f.png)
+![](../../images/278a411ad3de518b5ba125b8afe5bb4f.png)
 
 The content of this article is directly sourced from Archive Today: <https://archive.md/HoGem>.
