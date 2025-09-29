@@ -3,10 +3,10 @@ title: 更新：Vuepress 配置 Algolia 搜索
 createTime: 2025/09/27
 tags:
   - Frontend
-permalink: /article/0bfq6fvy/
 badge:
   type: info
   text: Translation
+permalink: /en/article/fobc1wwr/
 ---
 
 ::: warning
