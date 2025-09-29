@@ -12,7 +12,7 @@ permalink: /article/0bfq6fvy/
 
 首先访问 [DocSearch 主页](https://docsearch.algolia.com/)，在此页面点击“Sign Up”，经过一系列注册和登录操作后，你应该能看到如下界面：
 
-![](images/image.png)
+![](../images/34dfc95cc11d5988cc481d7a854ecdb4.png)
 
 随便起一个名字，然后点击下一步即可。创建过程可能会略有点慢，创建成功后页面会自动重定向。我曾遇到地区选择美国东部卡死在创建流程的情况，换到西欧就正常了。
 
@@ -32,7 +32,7 @@ permalink: /article/0bfq6fvy/
 
 在控制台中，点击左下角的 Data Sources 按钮，再点击 Crawler，即可添加或管理爬虫。
 
-![](images/image-1.png)
+![](../images/3a791fdd1baa48cce69212f430721dd4.png)
 
 
 点击创建好的爬虫，进入配置界面，在左侧菜单中点击 Editor，会进入一个代码编辑界面。代码很长，我们只关心前面的这一部分：
