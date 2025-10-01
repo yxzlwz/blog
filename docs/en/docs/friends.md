@@ -10,12 +10,20 @@ groups:
         desc: 喜欢钻研各种新奇的东西。
         link: https://modenc.top/
         avatar: https://modenc.top/avatar.jpg
+      - name: 云朵角落
+        avatar: https://image.honahec.cc/avatar.png
+        description: Honahec's Blog
+        link: https://blog.honahec.cc
       - name: NX の 博客
         desc: 求知若饥,虚心若愚
         link: https://nickxu.me/
         avatar: https://nickxu.me/static/icon.png
   - title: Projects
     list:
+      - name: QA瓜田
+        desc: An Online Forum of QA
+        link: https://qaguatian.com/
+        avatar: https://qaguatian.com/assets/logo-single-bNTGBFEX.svg
       - name: Plume Theme
         desc: A simple, easy-to-use, feature-rich VuePress documentation & blog theme
         link: https://theme-plume.vuejs.press/en/
