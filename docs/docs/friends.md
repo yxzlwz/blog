@@ -21,7 +21,7 @@ groups:
   - title: 项目
     list:
       - name: QA瓜田
-        desc: An Online Forum of QA
+        desc: 一个无人问津的QA论坛
         link: https://qaguatian.com/
         avatar: https://qaguatian.com/assets/logo-single-bNTGBFEX.svg
       - name: Plume 主题
@@ -50,3 +50,5 @@ groups:
 若您的网站已添加异想之旅的友链，我会在看到后的第一时间添加您的友链并部署。
 
 添加异想之旅的友链时，请使用 <https://blog.yxzl.dev/> 地址，图标请使用 <https://blog.yxzl.dev/head.png>。
+
+如果你的友链信息需要简介，请使用“异想之旅”作为标题，“异想之旅のBlog”作为简介；否则，请使用“异想之旅のBlog”作为标题。

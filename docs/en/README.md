@@ -20,6 +20,6 @@ config:
           text: About
           link: /en/about/
         - theme: brand
-          text: 中文
+          text: 简体中文
           link: /
 ---
