@@ -15,7 +15,7 @@ The content was translated from the Chinese version by Generative AI. Please dou
 
 A couple of days ago, the WeChat Official Account [He Jiayan] published an article titled *The Chinese Internet is Accelerating Its Collapse*, which went viral overnight on the Chinese internet and then disappeared overnight.
 
-I learned about this article from Twitter after it was deleted, and after reading the archived original text on [Archive Today](https://archive.md/HoGem), I thought the author really struck a chord with me. I have reprinted the original text on my blog; you can [read it here](/en/blogs/chinese-internet-collapse-reprint.html).
+I learned about this article from Twitter after it was deleted, and after reading the archived original text on [Archive Today](https://archive.md/HoGem), I thought the author really struck a chord with me. I have reprinted the original text on my blog; you can [read it here](/en/article/532iw8xm/).
 
 Before starting, I want to criticize one point of the original text. I consider myself relatively familiar with internet trends, but the data provided in the original text surprised me. I always thought that the content of websites operated by some major companies from ten or twenty years ago should still exist. Facts have confirmed my thought. Below are the results I obtained on May 25, 2024, by searching the keyword "马云 (Jack Ma)" on Baidu, Bing (non-Chinese version), and Google, with the time limited to January 1, 2000, to January 1, 2006.
 

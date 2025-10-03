@@ -1,5 +1,5 @@
 ---
-title: 更新：Vuepress 配置 Algolia 搜索
+title: Configure Algolia Search in Vuepress
 createTime: 2025/09/27
 tags:
   - Frontend
@@ -13,7 +13,7 @@ permalink: /en/article/fobc1wwr/
 The content was translated from the Chinese version by Generative AI. Please double-check the content.
 :::
 
-I once wrote an article introducing Algolia configuration in Vuepress on June 7, 2023 ([article](/article/379iguya/)). A couple of days ago, after changing to a new domain yxzl.dev, I surprisingly failed when trying to follow the same process again. After going through a series of troubles, I wrote the following new article.
+I once wrote an [article](/article/379iguya/) introducing Algolia configuration in Vuepress on June 7, 2023. A couple of days ago, after changing to a new domain yxzl.dev, I surprisingly failed when trying to follow the same process again. After going through a series of troubles, I wrote the following new article.
 
 ## Creating an Application
 

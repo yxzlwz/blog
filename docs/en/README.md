@@ -14,7 +14,7 @@ config:
         -
           theme: brand
           text: Blog
-          link: /en/blogs/
+          link: /en/blog/
         -
           theme: alt
           text: About
