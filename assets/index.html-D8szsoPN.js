@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-nvpAJ345.js";const n={};function r(c,o){return a(),e("div")}const s=t(n,[["render",r]]),i=JSON.parse('{"path":"/blog/tags/","title":"标签","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"标签","gitInclude":[],"draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"blog-tags"}');export{s as comp,i as data};
