@@ -11,15 +11,16 @@ config:
       # tagline: 异想之旅のBlog
       text: Loading quote...
       actions:
-        -
-          theme: brand
-          text: Blog
-          link: /en/blog/
-        -
-          theme: alt
-          text: About
-          link: /en/about/
         - theme: brand
+          text: Tech Blog
+          link: /en/tech/
+        - theme: alt
+          text: Essay
+          link: /en/essay/
+        - theme: brand
+          text: About
+          link: /en/about/README.md
+        - theme: alt
           text: 简体中文
           link: /
 ---

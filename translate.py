@@ -54,7 +54,7 @@ if __name__ == '__main__':
     content = translate(content)
     while ' \n' in content:
         content = content.replace(' \n', '\n')
-    content = content.replace('](../images/', '](../../images/')
+    content = content.replace('](/images/', '](/images/')
     new_text = f'''---
 {yaml}
 badge:

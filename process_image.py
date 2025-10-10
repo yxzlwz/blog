@@ -36,7 +36,7 @@ if __name__ == '__main__':
         else:
             md5 = file_md5(dir / match)
             (dir / match).replace(image_dir / f'{md5}.{ext}')
-        new_name = f'../images/{md5}.{match.split(".")[-1]}'
+        new_name = f'/images/{md5}.{match.split(".")[-1]}'
         content = content.replace(f']({match})', f']({new_name})')
         print(f'替换图片 {match} 为 {new_name}')
     with open(md_file, 'w', encoding='utf-8') as fp:

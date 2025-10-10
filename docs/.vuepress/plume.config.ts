@@ -1,6 +1,5 @@
 import { defineThemeConfig } from 'vuepress-theme-plume';
 import { enNavbar, zhNavbar } from './navbar';
-// import { enNotes, zhNotes } from './notes';
 
 export default defineThemeConfig({
   // logo: '/head.png',
@@ -35,22 +34,28 @@ export default defineThemeConfig({
       collections: [
         {
           type: 'post',
-          dir: 'blogs',
-          title: '博客',
-          postList: true,
-          link: '/blog/',
+          dir: 'tech',
+          title: '技术博客',
+          link: '/tech/',
           linkPrefix: '/article/',
-          tags: true,
-          tagsLink: '/blog/tags/',
-          tagsTheme: 'colored',
-          tagsText: '标签',
-          archives: true,
-          archivesLink: '/blog/archives/',
-          archivesText: '归档',
+          tagsLink: '/tech/tags/',
+          archivesLink: '/tech/archives/',
+          categories: false,
+          exclude: ['**/archive/*.md'],
         },
+        {
+          type: 'post',
+          dir: 'essay',
+          title: '随笔',
+          link: '/essay/',
+          linkPrefix: '/article/',
+          tagsLink: '/essay/tags/',
+          archivesLink: '/essay/archives/',
+          categories: false,
+        },
+        { type: 'doc', dir: 'about', title: '关于', autoFrontmatter: false },
       ],
       navbar: zhNavbar,
-      // notes: zhNotes,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
         copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
@@ -66,10 +71,29 @@ export default defineThemeConfig({
         organization: 'New York University Shanghai',
       },
       collections: [
-        { type: 'post', dir: 'blogs', title: 'Blog', categories: false },
+        {
+          type: 'post',
+          dir: 'tech',
+          title: 'Tech Blog',
+          link: '/tech/',
+          linkPrefix: '/article/',
+          tagsLink: '/en/blog/tags/',
+          archivesLink: '/en/blog/archives/',
+          categories: false,
+        },
+        {
+          type: 'post',
+          dir: 'essay',
+          title: 'Essay',
+          link: '/essay/',
+          linkPrefix: '/article/',
+          tagsLink: '/en/essay/tags/',
+          archivesLink: '/en/essay/archives/',
+          categories: false,
+        },
+        { type: 'doc', dir: 'about', title: 'About', autoFrontmatter: false },
       ],
       navbar: enNavbar,
-      // notes: enNotes,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
         copyright: `©️ yxzlwz 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,

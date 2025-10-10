@@ -12,12 +12,15 @@ config:
       text: 亿言加载中...
       actions:
         - theme: brand
-          text: 博客
-          link: /blog/
+          text: 技术博客
+          link: /tech/
         - theme: alt
-          text: 关于我
-          link: /about/
+          text: 随笔
+          link: /essay/
         - theme: brand
+          text: 关于我
+          link: /about/README.md
+        - theme: alt
           text: English
           link: /en/
 ---
