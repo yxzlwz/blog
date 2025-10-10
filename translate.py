@@ -4,6 +4,7 @@ from openai import OpenAI
 TAGS = {
     '云服务与部署': 'Cloud & Deploy',
     '转载': 'Reprint',
+    '算法': 'Algorithm',
     '杂谈': 'Casual Talk',
     '后端': 'Backend',
     '前端': 'Frontend',
@@ -69,5 +70,7 @@ The content was translated from the Chinese version by Generative AI. Please dou
 {content}
 '''
     en_path = str(path.resolve()).replace('/blog/docs/', '/blog/docs/en/')
+    en_path = Path(en_path)
+    en_path.parent.mkdir(parents=True, exist_ok=True)
     with open(en_path, 'w', encoding='utf-8') as f:
         f.write(new_text)

@@ -2,7 +2,6 @@
 title: 【转载】网号时代要来了，我的看法
 tags:
   - 转载
-  - 杂谈
 createTime: 2024/07/30
 copyright:
   creation: reprint
