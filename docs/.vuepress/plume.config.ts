@@ -1,6 +1,6 @@
 import { defineThemeConfig } from 'vuepress-theme-plume';
 import { enNavbar, zhNavbar } from './navbar';
-import { enNotes, zhNotes } from './notes';
+// import { enNotes, zhNotes } from './notes';
 
 export default defineThemeConfig({
   // logo: '/head.png',
@@ -32,9 +32,25 @@ export default defineThemeConfig({
         location: '上海',
         organization: '上海纽约大学',
       },
-
+      collections: [
+        {
+          type: 'post',
+          dir: 'blogs',
+          title: '博客',
+          postList: true,
+          link: '/blog/',
+          linkPrefix: '/article/',
+          tags: true,
+          tagsLink: '/blog/tags/',
+          tagsTheme: 'colored',
+          tagsText: '标签',
+          archives: true,
+          archivesLink: '/blog/archives/',
+          archivesText: '归档',
+        },
+      ],
       navbar: zhNavbar,
-      notes: zhNotes,
+      // notes: zhNotes,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
         copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
@@ -49,9 +65,11 @@ export default defineThemeConfig({
         location: 'Shanghai, China',
         organization: 'New York University Shanghai',
       },
-
+      collections: [
+        { type: 'post', dir: 'blogs', title: 'Blog', categories: false },
+      ],
       navbar: enNavbar,
-      notes: enNotes,
+      // notes: enNotes,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
         copyright: `©️ yxzlwz 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,

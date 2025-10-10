@@ -36,18 +36,18 @@ export default defineUserConfig({
     contributors: false,
     changelog: false,
 
-    blog: {
-      link: '/blog/',
-      tagsLink: '/blog/tags/',
-      tagsTheme: 'colored',
-      postList: true,
-      tags: true,
-      archives: true,
-      categories: false,
-      postCover: 'right',
-      pagination: 15,
-      exclude: ['.vuepress/', '**/README.md', 'archive/**.md'],
-    },
+    // blog: {
+    //   link: '/blog/',
+    //   tagsLink: '/blog/tags/',
+    //   tagsTheme: 'colored',
+    //   postList: true,
+    //   tags: true,
+    //   archives: true,
+    //   categories: false,
+    //   postCover: 'right',
+    //   pagination: 15,
+    //   exclude: ['.vuepress/', '**/README.md', 'archive/**.md'],
+    // },
 
     /* 博客文章页面链接前缀 */
     // article: '/article/',
