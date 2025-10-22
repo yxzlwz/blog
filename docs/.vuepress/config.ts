@@ -48,7 +48,7 @@ export default defineUserConfig({
       provider: 'algolia',
       appId: '6T04KIYWWA',
       apiKey: 'bf499ff2ef33bee13e00afc00af7dd93',
-      indexName: 'blog-crawler',
+      indices: ['blog-crawler'],
     },
 
     /**
