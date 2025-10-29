@@ -17,6 +17,18 @@ groups:
         desc: 求知若饥,虚心若愚
         link: https://nickxu.me/
         avatar: https://nickxu.me/static/icon.png
+      - name: Hoey
+        desc: 老师，我太想进步了。
+        link: https://zhenghaoyang.cn/
+        avatar: https://zhenghaoyang.cn/siteshot.png
+      - name: XINGJI
+        desc: 迄今所有人生都大写着失败，但不妨碍我继续向前✨
+        link: https://vue.xingji.fun
+        avatar: https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg
+      - name: wynnsimon
+        desc: 山难现浮槎，心易陷镜花。
+        link: https://w20241204.dpdns.org/
+        avatar: https://w20241204.dpdns.org/images/avatar.jpg
   - title: 项目
     list:
       - name: QA瓜田
