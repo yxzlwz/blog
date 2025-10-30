@@ -20,7 +20,7 @@ groups:
       - name: Hoey
         desc: 老师，我太想进步了。
         link: https://zhenghaoyang.cn/
-        avatar: https://zhenghaoyang.cn/siteshot.png
+        avatar: https://zhenghaoyang.cn/avatar.jpg
       - name: XINGJI
         desc: 迄今所有人生都大写着失败，但不妨碍我继续向前✨
         link: https://vue.xingji.fun
