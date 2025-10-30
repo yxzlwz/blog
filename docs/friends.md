@@ -29,6 +29,14 @@ groups:
         desc: 山难现浮槎，心易陷镜花。
         link: https://w20241204.dpdns.org/
         avatar: https://w20241204.dpdns.org/images/avatar.jpg
+      - name: 耳朵同
+        desc: 耳朵同的博客
+        link: https://blog.erduotong.com/
+        avatar: https://blog.erduotong.com/logo.png
+      - name: MSDNicrosoft
+        desc: 一只可爱的小懒猫
+        link: https://msdnicrosoft.work/
+        avatar: https://assets.msdnicrosoft.work/img/favicon.webp
   - title: 项目
     list:
       - name: QA瓜田
