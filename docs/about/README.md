@@ -8,7 +8,7 @@ copyright: false
 - [GitHub](https://github.com/yxzlwz)
 - [Twitter](https://twitter.com/yxzlwz)
 - [Instagram](https://www.instagram.com/yxzlwz/)
-- [Email](mailto:yxzlwz@gmail.com)
+- [Email: i@yxzl.dev](mailto:i@yxzl.dev)
 - [Telegram](https://t.me/yxzlwz)
 
 ---

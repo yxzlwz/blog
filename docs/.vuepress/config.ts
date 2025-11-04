@@ -116,7 +116,7 @@ export default defineUserConfig({
   }),
   plugins: [
     googleAnalyticsPlugin({
-      id: 'G-YNWN3VVCTL',
+      id: 'G-0K74FLPKWM',
     }),
   ],
 });
