@@ -13,6 +13,8 @@ groups:
         avatar: https://image.honahec.cc/avatar.png
         description: Honahec's Blog
         link: https://blog.honahec.cc
+  - title: 网友
+    list:
       - name: NX の 博客
         desc: 求知若饥,虚心若愚
         link: https://nickxu.me/
@@ -37,6 +39,10 @@ groups:
         desc: 一只可爱的小懒猫
         link: https://msdnicrosoft.work/
         avatar: https://assets.msdnicrosoft.work/img/favicon.webp
+      - name: 纸鹿摸鱼处
+        desc: 纸鹿至麓不知路，支炉制露不止漉
+        link: https://blog.zhilu.site/
+        avatar: https://www.zhilu.site/api/avatar.png
   - title: 项目
     list:
       - name: QA瓜田
