@@ -1,5 +1,6 @@
 import { defineThemeConfig } from 'vuepress-theme-plume';
 import { enNavbar, zhNavbar } from './navbar';
+import collections from './collections';
 
 export default defineThemeConfig({
   // logo: '/head.png',
@@ -31,30 +32,7 @@ export default defineThemeConfig({
         location: '上海',
         organization: '上海纽约大学',
       },
-      collections: [
-        {
-          type: 'post',
-          dir: 'tech',
-          title: '技术博客',
-          link: '/tech/',
-          linkPrefix: '/article/',
-          tagsLink: '/tech/tags/',
-          archivesLink: '/tech/archives/',
-          categories: false,
-          exclude: ['**/archive/*.md'],
-        },
-        {
-          type: 'post',
-          dir: 'essay',
-          title: '随笔',
-          link: '/essay/',
-          linkPrefix: '/article/',
-          tagsLink: '/essay/tags/',
-          archivesLink: '/essay/archives/',
-          categories: false,
-        },
-        { type: 'doc', dir: 'about', title: '关于', autoFrontmatter: false },
-      ],
+      collections,
       navbar: zhNavbar,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
