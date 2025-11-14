@@ -13,6 +13,10 @@ groups:
         avatar: https://image.honahec.cc/avatar.png
         description: Honahec's Blog
         link: https://blog.honahec.cc
+      - name: Iron_Grey_
+        avatar: https://irongrey.top/headphoto.png
+        desc: Iron_Grey_的首页
+        link: https://IronGrey.top/
   - title: 网友
     list:
       - name: NX の 博客
