@@ -47,7 +47,6 @@ permalink: /article/2eb4u0gf/
 - [下载链接](https://git-qiuchenly.yltfspace.com/QiuChenly/corepatch/-/archive/main/corepatch-main.zip?ref_type=heads)
 - [异想之旅云盘备份](https://cloud.yxzl.dev/s/0ZYfJ)，密码：`qiuchenly`
 
-
 如果链接失效，请通过下方给出的开发者信息自行查找。
 
 ::: info
@@ -61,6 +60,8 @@ permalink: /article/2eb4u0gf/
 下载并解压，双击运行 `秋城落叶_启动.command`。初次运行进程可能被杀掉，此时 Mac 右上角会弹出安全提示通知。请在通知操作中选择“允许”，然后在打开的设置页面中，勾选“Terminal”（终端），之后再次双击运行 `秋城落叶_启动.command` 即可。
 
 正常运行后，根据提示选择 Photoshop 进行激活。程序不报错自行退出即表示激活成功。
+
+后附开发者提供的文档（大多是解决问题相关，没有步骤指引）：[快速上手 | CoreInject](https://qiuchenlyopensource.github.io/Documentaions/getting-started.html)
 
 ## 碎碎念
 

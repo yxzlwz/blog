@@ -46,7 +46,7 @@ groups:
       - name: 纸鹿摸鱼处
         desc: 纸鹿至麓不知路，支炉制露不止漉
         link: https://blog.zhilu.site/
-        avatar: https://www.zhilu.site/api/avatar.png
+        avatar: https://www.zhilu.cyou/api/avatar.png
   - title: 项目
     list:
       - name: QA瓜田
