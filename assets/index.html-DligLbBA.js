@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-DiyT4D9I.js";const n={};function s(r,c){return a(),e("div")}const l=t(n,[["render",s]]),i=JSON.parse('{"path":"/en/essay/tags/","title":"Tags","lang":"en-US","frontmatter":{"lang":"en-US","title":"Tags","gitInclude":[],"draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"posts-tags"}');export{l as comp,i as data};
