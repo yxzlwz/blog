@@ -25,7 +25,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   theme: plumeTheme({
-    hostname: 'https://blog.yxzl.dev',
+    hostname: 'https://yxzl.dev',
 
     docsRepo: 'yxzlwz/blog',
     docsDir: 'docs',

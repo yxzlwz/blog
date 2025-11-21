@@ -48,6 +48,6 @@ Who wish to exchange friend links may submit them in the following two ways:
 
 I will handle your request ASAP if you have already add my link in your website.
 
-When adding YXZL to your website, please use the link <https://blog.yxzl.dev/> and avatar <https://blog.yxzl.dev/head.png>。
+When adding YXZL to your website, please use the link <https://yxzl.dev/> and avatar <https://yxzl.dev/head.png>。
 
 If your need to add description, please use "YXZL" as title and "异想之旅のBlog" as description; otherwise, please use "异想之旅のBlog" as title.
