@@ -1,6 +1,6 @@
 import { defineThemeConfig } from 'vuepress-theme-plume';
 import { enNavbar, zhNavbar } from './navbar';
-import collections from './collections';
+import { zhCollections, enCollections } from './collections';
 
 export default defineThemeConfig({
   // logo: '/head.png',
@@ -32,7 +32,7 @@ export default defineThemeConfig({
         location: '上海',
         organization: '上海纽约大学',
       },
-      collections,
+      collections:zhCollections,
       navbar: zhNavbar,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
@@ -48,29 +48,7 @@ export default defineThemeConfig({
         location: 'Shanghai, China',
         organization: 'New York University Shanghai',
       },
-      collections: [
-        {
-          type: 'post',
-          dir: 'tech',
-          title: 'Tech Blog',
-          link: '/tech/',
-          linkPrefix: '/article/',
-          tagsLink: '/en/blog/tags/',
-          archivesLink: '/en/blog/archives/',
-          categories: false,
-        },
-        {
-          type: 'post',
-          dir: 'essay',
-          title: 'Essay',
-          link: '/essay/',
-          linkPrefix: '/article/',
-          tagsLink: '/en/essay/tags/',
-          archivesLink: '/en/essay/archives/',
-          categories: false,
-        },
-        { type: 'doc', dir: 'about', title: 'About', autoFrontmatter: false },
-      ],
+      collections:enCollections,
       navbar: enNavbar,
       footer: {
         message: `<img src="/ua.svg" alt="Ukraine" /> Firmly stand with Ukraine against Russia\'s brutal invasion.`,

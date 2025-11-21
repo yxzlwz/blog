@@ -5,7 +5,8 @@ config:
   -
     type: hero
     full: true
-    background: tint-plate
+    effect: tint-plate
+    effectConfig: 210
     hero:
       name: 异想之旅のBlog
       # tagline: 异想之旅のBlog

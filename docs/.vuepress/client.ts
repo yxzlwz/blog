@@ -10,7 +10,6 @@ import { useRoute } from 'vue-router';
 import './style.scss';
 
 const updateYiyan = () => {
-  console.log('updateYiyan');
   if (window.location.pathname === '/') {
     fetch('https://api.yixiangzhilv.com/yiyan/sentence/get/')
       .then(res => res.json())
