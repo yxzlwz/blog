@@ -1,5 +1,5 @@
 ---
-title: 更新：Vuepress 配置 Algolia 搜索
+title: 【已更新】Vuepress 配置 Algolia 搜索 + Algolia 搜索无结果解决方案
 createTime: 2025/09/27
 tags:
   - 前端
@@ -107,3 +107,20 @@ new Crawler({
 在此之后点击上图中 4 标注的小眼睛回到 Overview 界面，点击右上角的按钮重新启动爬虫，然后耐心等待爬取完成就可以啦！
 
 ![](/images/5763369b867ee40f08d0d3e8c1a98066.png)
+
+## 编辑 Vuepress 配置
+
+**重要：如果你在更新依赖后 Algolia 无法正常搜索，请看此部分。**
+
+在 Vuepress 项目的配置文件 `config.ts` 中，填写从 Algolia 控制台获取的 `appId`、`apiKey` 和 `indexName` 即可，例如我的博客：
+
+```ts{5}
+search: {
+  provider: 'algolia',
+  appId: '6T04xxxxxx',
+  apiKey: 'bf499fxxxxxx',
+  indices: ['blog-crawler'],
+},
+```
+
+特别注意高亮的代码：在旧版本中，此配置写为 `indexName: 'blog-crawler'`，但在新版本中必须按上面的格式填写才能正常使用。
