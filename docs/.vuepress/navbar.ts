@@ -31,8 +31,8 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Projects', link: '/en/projects.md' },
   { text: 'About', link: '/en/about/' },
   { text: 'Friends', link: '/en/friends.md' },
-  {
-    text: 'More',
-    items: [{ text: 'Python Tutorial', link: 'https://python.yxzl.dev/' }],
-  },
+  // {
+  //   text: 'More',
+  //   items: [{ text: 'Python Tutorial', link: 'https://python.yxzl.dev/' }],
+  // },
 ]);
