@@ -25,6 +25,7 @@ export const enNavbar = defineNavbarConfig([
     items: [
       { text: 'Tech Blog', link: '/en/tech/' },
       { text: 'Essay', link: '/en/essay/' },
+      { text: 'Linear Algebra', link: '/en/linear_algebra/' },
     ],
   },
   { text: 'Projects', link: '/en/projects.md' },

@@ -77,4 +77,10 @@ export const enCollections = defineCollections([
     categories: false,
   },
   { type: 'doc', dir: 'about', title: 'About', autoFrontmatter: false },
+  {
+    type: 'doc',
+    dir: 'linear_algebra',
+    title: 'Linear Algebra',
+    sidebar: 'auto',
+  },
 ]);
