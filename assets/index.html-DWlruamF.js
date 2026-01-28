@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-Tf8BuBYq.js";const c={};function n(r,o){return a(),e("div")}const l=t(c,[["render",n]]),i=JSON.parse('{"path":"/tech/","title":"技术博客","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"技术博客","gitInclude":[],"draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"posts"}');export{l as comp,i as data};

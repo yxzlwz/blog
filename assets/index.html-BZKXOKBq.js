@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-Tf8BuBYq.js";const n={};function s(c,r){return a(),e("div")}const l=t(n,[["render",s]]),i=JSON.parse('{"path":"/en/tech/tags/","title":"Tags","lang":"en-US","frontmatter":{"lang":"en-US","title":"Tags","gitInclude":[],"draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"posts-tags"}');export{l as comp,i as data};
