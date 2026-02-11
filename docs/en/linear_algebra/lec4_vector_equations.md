@@ -2,6 +2,7 @@
 title: 4. Vector Equations
 createTime: 2026/01/28 11:20:55
 permalink: /en/linear_algebra/f9ntkpr1/
+draft: true
 ---
 
 ## Vectors

@@ -2,7 +2,9 @@
 title: 2. Systems of Linear Equations
 createTime: 2026/01/21 13:27:35
 permalink: /en/linear_algebra/2w3xk95z/
+draft: true
 ---
+
 ## Linear Equation (线性方程)
 
 ### Definition

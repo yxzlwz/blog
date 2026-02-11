@@ -2,7 +2,9 @@
 title: 1. Matrix and Linear Systems
 createTime: 2026/01/21 12:27:09
 permalink: /en/linear_algebra/vgozeor4/
+draft: true
 ---
+
 ## What is Linear Algebra?
 
 To put it simple, Linear Algebra is the ==study of linear transformations==.
