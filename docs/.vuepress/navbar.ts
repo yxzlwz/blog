@@ -7,6 +7,7 @@ export const zhNavbar = defineNavbarConfig([
     items: [
       { text: '技术博客', link: '/tech/' },
       { text: '随笔', link: '/essay/' },
+      { text: '线性代数', link: '/en/linear_algebra/' },
     ],
   },
   { text: '项目', link: '/projects.md' },

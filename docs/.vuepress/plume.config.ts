@@ -35,8 +35,8 @@ export default defineThemeConfig({
       collections:zhCollections,
       navbar: zhNavbar,
       footer: {
-        message: `<img src="/ua.svg" alt="Ukraine" /> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
-        copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
+        message: `<a href="https://u24.gov.ua/" target="_blank"><img src="/ua.svg" alt="Ukraine" /></a> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
+        copyright: `©️ 异想之旅 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>`,
       },
     },
     '/en/': {
@@ -51,7 +51,7 @@ export default defineThemeConfig({
       collections:enCollections,
       navbar: enNavbar,
       footer: {
-        message: `<img src="/ua.svg" alt="Ukraine" /> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
+        message: `<a href="https://u24.gov.ua/" target="_blank"><img src="/ua.svg" alt="Ukraine" /></a> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
         copyright: `©️ yxzlwz 2018-${new Date().getFullYear()} | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>`,
       },
     },
