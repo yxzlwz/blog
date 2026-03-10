@@ -6,11 +6,12 @@ export default defineThemeConfig({
   // logo: '/head.png',
 
   appearance: true,
-
   social: [
     { icon: 'github', link: 'https://github.com/yxzlwz' },
     { icon: 'twitter', link: 'https://twitter.com/yxzlwz' },
+    { icon: 'zhihu', link: 'https://www.zhihu.com/people/yxzlwz' },
     { icon: 'instagram', link: 'https://www.instagram.com/yxzlwz/' },
+    { icon: 'youtube', link: 'https://www.youtube.com/@yxzlwz' },
     { icon: 'telegram', link: 'https://t.me/yxzlwz' },
   ],
   navbarSocialInclude: ['github'],
@@ -32,7 +33,7 @@ export default defineThemeConfig({
         location: '上海',
         organization: '上海纽约大学',
       },
-      collections:zhCollections,
+      collections: zhCollections,
       navbar: zhNavbar,
       footer: {
         message: `<a href="https://u24.gov.ua/" target="_blank"><img src="/ua.svg" alt="Ukraine" /></a> 在俄罗斯对乌克兰发动的野蛮的侵略战争中矢志不渝地支持乌克兰`,
@@ -48,7 +49,7 @@ export default defineThemeConfig({
         location: 'Shanghai, China',
         organization: 'New York University Shanghai',
       },
-      collections:enCollections,
+      collections: enCollections,
       navbar: enNavbar,
       footer: {
         message: `<a href="https://u24.gov.ua/" target="_blank"><img src="/ua.svg" alt="Ukraine" /></a> Firmly stand with Ukraine against Russia\'s brutal invasion.`,
