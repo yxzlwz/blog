@@ -22,7 +22,7 @@ Furthermore, Liu highlights his wife’s suffering by stating, “I am serving m
 
 Liu reaches the climax of the statement by utilizing a series of anaphoric “where” clauses:
 
-> I look forward to [the day] when my country is a land with freedom of expression, where the speech of every citizen will be treated equally well; where different values, ideas, beliefs, and political views … can both compete with each other and peacefully coexist; where both majority and minority views will be equally guaranteed, and where the political views that differ from those currently in power, in particular, will be fully respected and protected; where all political views will spread out under the sun for people to choose from, where every citizen can state political views without fear, and where no one can under any circumstances suffer political persecution for voicing divergent political views. (Liu)
+> *I look forward to [the day] when my country is a land with freedom of expression, where the speech of every citizen will be treated equally well; where different values, ideas, beliefs, and political views … can both compete with each other and peacefully coexist; where both majority and minority views will be equally guaranteed, and where the political views that differ from those currently in power, in particular, will be fully respected and protected; where all political views will spread out under the sun for people to choose from, where every citizen can state political views without fear, and where no one can under any circumstances suffer political persecution for voicing divergent political views.* (Liu)
 
 The repetition of the word “where” creates a strong rhythm that makes his words more powerful. By putting forward his political vision of a future China, Liu redirects the audience’s focus from the case to his aspiration for a reformed society; by relating such an ideal to the Constitution of China, Liu strongly proves that his idea is grand but legally tangible; by interpreting his actions as “exercising the right to freedom of speech conferred by the Constitution”, Liu exposes a fundamental contradiction where the regime’s charges against him conflict with the foundation document of the nation. After building ethos and appealing to pathos, this strategic use of logos refines the rhetorical framework, which ensures that his statement is neither an emotional cry nor an unattractive philosophic argument, but a rational proposal that everyone can benefit from. Meanwhile, Liu’s strategic deconstruction of the state’s accusations reverses the burden of proof. He successfully finishes his defense by placing the regime in a legal dilemma, forcing the court to choose between conforming to the law or making an unconstitutional judgement.
 
@@ -30,8 +30,8 @@ Overall, Liu’s statement achieves its power through a masterful synthesis of e
 
 Works Cited
 
-- Hatton, Celia.  “刘霞与刘晓波：艰难的罗曼史.” BBC News 中文, 9 July 2017, <https://www.bbc.com/zhongwen/simp/chinese-news-40547571>. Accessed 8 Feb. 2026.
+- Hatton, Celia.  “刘霞与刘晓波：艰难的罗曼史.” *BBC News 中文*, 9 July 2017, <https://www.bbc.com/zhongwen/simp/chinese-news-40547571>. Accessed 8 Feb. 2026.
 - Liu, Xiaobo. “I Have No Enemies: My Final Statement.” 2009. Translated by Human Rights in China (HRIC), based on a translation by J. Latourelle. Nobel Prize, 10 Dec. 2010, <https://www.nobelprize.org/prizes/peace/2010/xiaobo/lecture/>. Accessed 7 Feb. 2026.
-- Medlicott, Carol. “State Apparatus.” Reader’s Guide to the Social Sciences, edited by Jonathan Michie, 1st ed., 2001. Infobase, <https://access.infobase.com/article/10235272-state-apparatus?aid=237298>.
-- Young, Tory. Studying English Literature: A Practical Guide. Cambridge; New York, Cambridge University Press, 2008.
+- Medlicott, Carol. “State Apparatus.” *Reader’s Guide to the Social Sciences*, edited by Jonathan Michie, 1st ed., 2001. Infobase, <https://access.infobase.com/article/10235272-state-apparatus?aid=237298>.
+- Young, Tory. *Studying English Literature: A Practical Guide*. Cambridge; New York, Cambridge University Press, 2008.
 
