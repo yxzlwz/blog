@@ -24,4 +24,7 @@ config:
         - theme: alt
           text: 简体中文
           link: /
+  -
+    type: posts
+    collection: essay
 ---

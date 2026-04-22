@@ -24,4 +24,7 @@ config:
         - theme: alt
           text: English
           link: /en/
+  -
+    type: posts
+    collection: tech
 ---
