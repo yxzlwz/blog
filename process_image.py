@@ -2,7 +2,10 @@ import hashlib
 import re
 import pathlib
 
-from requests import get
+try:
+    from requests import get
+except ImportError:
+    ...
 
 
 def file_md5(file_path):

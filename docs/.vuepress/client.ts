@@ -11,13 +11,13 @@ import './style.scss';
 
 const updateYiyan = () => {
   if (window.location.pathname === '/') {
-    fetch('https://api.yixiangzhilv.com/yiyan/sentence/get/')
+    fetch('https://memokeep.cc/api/koto/sentence/get/')
       .then(res => res.json())
       .then(data => {
-        if (data.provenance && data.author) {
-          data.from_show = `${data.provenance} · ${data.author}`;
+        if (data.source && data.author) {
+          data.from_show = `${data.source} · ${data.author}`;
         } else {
-          data.from_show = `${data.provenance || data.author}`;
+          data.from_show = `${data.source || data.author}`;
         }
         const yiyan = `${data.content} - 「${data.from_show}」`;
         const element = document.getElementsByClassName('hero-text')[0];
