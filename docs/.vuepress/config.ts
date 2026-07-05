@@ -21,7 +21,28 @@ export default defineUserConfig({
 
   head: [['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }]],
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [
+        {
+          name: 'docsearch-no-ssr-placeholder',
+          enforce: 'pre',
+          transform(code, id) {
+            if (
+              !id.endsWith('/@vuepress/plugin-docsearch/lib/client/index.js')
+            ) {
+              return null;
+            }
+
+            return code.replace(
+              'innerHTML:J(s.value.translations?.button)',
+              'innerHTML:__VUEPRESS_SSR__?"":J(s.value.translations?.button)'
+            );
+          },
+        },
+      ],
+    },
+  }),
   shouldPrefetch: false,
 
   theme: plumeTheme({
@@ -112,6 +133,15 @@ export default defineUserConfig({
       mapping: 'pathname',
       reactionsEnabled: true,
       inputPosition: 'top',
+    },
+
+    plugins: {
+      seo: {
+        hostname: 'https://yxzl.dev',
+        canonical: 'https://yxzl.dev',
+        author: { name: '异想之旅', url: 'https://yxzl.dev/about/' },
+        fallBackImage: 'https://yxzl.dev/head.png',
+      },
     },
   }),
   plugins: [

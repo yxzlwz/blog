@@ -33,6 +33,6 @@
     "vuepress-theme-plume": "1.0.0-rc.178"
   },
   "dependencies": {
-    "pyodide": "^0.28.3"
+    "pyodide": "^0.29.4"
   }
 }
