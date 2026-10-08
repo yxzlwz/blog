@@ -2,11 +2,6 @@ import hashlib
 import re
 import pathlib
 
-try:
-    from requests import get
-except ImportError:
-    ...
-
 
 def file_md5(file_path):
     with open(file_path, 'rb') as fp:
@@ -17,7 +12,7 @@ def file_md5(file_path):
 md_file = None
 
 if __name__ == '__main__':
-    md_file = input('请输入Blog MarkDown文件路径：')
+    md_file = input('请输入Blog MarkDown文件路径: ')
     md_file = md_file.replace('"', '').replace("'", '').strip()
     md_file = pathlib.Path(md_file)
     dir = md_file.parent
@@ -30,15 +25,14 @@ if __name__ == '__main__':
         ext = match.split('.')[-1]
         md5 = None
         if match.startswith('http'):
-            r = get(match)
-            t_file = pathlib.Path(f'temp.{ext}')
-            with open(t_file, 'wb') as fp:
-                fp.write(r.content)
-            md5 = file_md5(t_file)
-            t_file.replace(image_dir / f'{md5}.{ext}')
+            continue
         else:
-            md5 = file_md5(dir / match)
-            (dir / match).replace(image_dir / f'{md5}.{ext}')
+            file_path = dir / match
+            if not file_path.exists():
+                print(f'文件不存在：{file_path}')
+                continue
+            md5 = file_md5(file_path)
+            (file_path).replace(image_dir / f'{md5}.{ext}')
         new_name = f'/images/{md5}.{match.split(".")[-1]}'
         content = content.replace(f']({match})', f']({new_name})')
         print(f'替换图片 {match} 为 {new_name}')
