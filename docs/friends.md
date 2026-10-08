@@ -52,6 +52,8 @@ groups:
         desc: 一款简洁的 vuepress 博客 & 文档 主题。
         link: https://theme-reco.vuejs.press/
         avatar: https://theme-reco.vuejs.press/logo.png
+createTime: 2025/11/21 12:07:32
+permalink: /friends/
 ---
 
 ---

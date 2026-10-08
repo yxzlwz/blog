@@ -23,7 +23,9 @@ groups:
         link: https://qaguatian.com/
         avatar: https://qaguatian.com/assets/logo-single-bNTGBFEX.svg
       - name: Plume Theme
-        desc: A simple, easy-to-use, feature-rich VuePress documentation & blog theme
+        desc: >-
+          A simple, easy-to-use, feature-rich VuePress documentation & blog
+          theme
         link: https://theme-plume.vuejs.press/en/
         avatar: https://theme-plume.vuejs.press/plume.png
       - name: Hitokoto - 一言
@@ -34,6 +36,8 @@ groups:
         desc: A simple vuepress Blog & Doc theme.
         link: https://theme-reco.vuejs.press/en/
         avatar: https://theme-reco.vuejs.press/logo.png
+createTime: 2025/09/26 17:30:25
+permalink: /en/friends/
 ---
 
 ---

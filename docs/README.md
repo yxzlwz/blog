@@ -2,14 +2,12 @@
 pageLayout: home
 externalLinkIcon: false
 config:
-  -
-    type: hero
+  - type: hero
     full: true
     effect: tint-plate
     effectConfig: 210
     hero:
       name: 异想之旅のBlog
-      # tagline: 异想之旅のBlog
       text: 亿言加载中...
       actions:
         - theme: brand
@@ -24,7 +22,5 @@ config:
         - theme: alt
           text: English
           link: /en/
-  -
-    type: posts
-    collection: tech
+title:
 ---

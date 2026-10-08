@@ -57,4 +57,5 @@ export default defineThemeConfig({
       },
     },
   },
+  readAid: 'left',
 });
