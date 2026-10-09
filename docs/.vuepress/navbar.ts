@@ -10,12 +10,15 @@ export const zhNavbar = defineNavbarConfig([
       { text: '线性代数', link: '/en/linear_algebra/' },
     ],
   },
-  { text: '项目', link: '/projects.md' },
-  { text: '关于', link: '/about/README.md' },
-  { text: '友链', link: '/friends.md' },
+  // { text: '项目', link: '/projects.md' },
+  // { text: '关于', link: '/about/README.md' },
+  { text: '关于我', link: 'https://i.yxzl.dev/' },
+  { text: '友链', link: '/friends/' },
   {
     text: '更多',
-    items: [{ text: 'Python 入门文档', link: 'https://python.yxzl.dev/' }],
+    items: [
+      { text: '技术文档', link: 'https://docs.yxzl.dev/' },
+    ],
   },
 ]);
 
@@ -29,9 +32,10 @@ export const enNavbar = defineNavbarConfig([
       { text: 'Linear Algebra', link: '/en/linear_algebra/' },
     ],
   },
-  { text: 'Projects', link: '/en/projects.md' },
-  { text: 'About', link: '/en/about/' },
-  { text: 'Friends', link: '/en/friends.md' },
+  // { text: 'Projects', link: '/en/projects.md' },
+  // { text: 'About', link: '/en/about/' },
+  { text: 'About Me', link: 'https://i.yxzl.dev/' },
+  { text: 'Friends', link: '/en/friends/' },
   // {
   //   text: 'More',
   //   items: [{ text: 'Python Tutorial', link: 'https://python.yxzl.dev/' }],

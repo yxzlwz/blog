@@ -18,7 +18,7 @@ config:
           link: /essay/
         - theme: brand
           text: 关于我
-          link: /about/README.md
+          link: https://i.yxzl.dev/
         - theme: alt
           text: English
           link: /en/
