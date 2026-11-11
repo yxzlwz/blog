@@ -17,7 +17,7 @@ config:
           text: Essay
           link: /en/essay/
         - theme: brand
-          text: About
+          text: About Me
           link: https://i.yxzl.dev/
         - theme: alt
           text: 简体中文
