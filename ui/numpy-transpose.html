@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>理解 numpy 的 transpose</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f7f4;--card:#fff;--ink:#1d2421;--mute:#66706b;--line:#d9ddd6;--ac:#1f6f5c;
+--c0:#cfe8df;--c1:#f6d9b8;--c2:#d6d9f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a18;--card:#1c2421;--ink:#e7ece9;--mute:#9aa6a0;--line:#33403b;--ac:#5fc4a8;--c0:#24493f;--c1:#5a4426;--c2:#343a63}}
+:root[data-theme="dark"]{--bg:#141a18;--card:#1c2421;--ink:#e7ece9;--mute:#9aa6a0;--line:#33403b;--ac:#5fc4a8;--c0:#24493f;--c1:#5a4426;--c2:#343a63}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:22px;margin:0 0 4px}
+p.sub{margin:0 0 16px;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:14px}
+h2{font-size:15px;margin:0 0 10px}
+.presets button,.ax button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:5px 10px;cursor:pointer}
+.presets button.on,.ax button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.presets{display:flex;gap:8px;flex-wrap:wrap}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:8px 0}
+.row label{color:var(--mute);font-size:13px}
+input{width:44px;font:inherit;padding:4px;text-align:center;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+select{font:inherit;padding:4px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;background:var(--bg);padding:6px 8px;border-radius:6px;display:block;overflow-x:auto;white-space:nowrap}
+.grids{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+.grids>div{overflow-x:auto;max-width:100%}
+table{border-collapse:separate;border-spacing:3px}
+td{width:38px;height:34px;text-align:center;border-radius:5px;cursor:pointer;font-variant-numeric:tabular-nums;border:2px solid transparent}
+td.hl{border-color:var(--ac);font-weight:700;outline:2px solid var(--ac)}
+.cap{font-size:13px;color:var(--mute);margin-bottom:4px}
+#info{min-height:48px;font-size:14px}
+#status{font-weight:600;margin-top:8px}
+.ok{color:var(--ac)}.bad{color:#c0392b}
+.legend span{display:inline-block;padding:1px 8px;border-radius:4px;margin-right:6px;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<h1>numpy transpose 可视化</h1>
+<p class="sub">把 X 拆成多个轴,调换轴的顺序,再拼回 4×6。鼠标移到任意数字上,看它去了哪里。</p>
+
+<div class="card">
+<h2>选一个选项,或自己调</h2>
+<div class="presets" id="presets"></div>
+<div class="row">
+<label>reshape 成</label>
+<span id="shapeIn"></span>
+<label>transpose 轴顺序</label>
+<span id="permIn"></span>
+</div>
+<code id="code"></code>
+<div id="status"></div>
+</div>
+
+<div class="card">
+<div class="row" style="margin-top:0">
+<label>按哪个轴着色:</label>
+<span class="ax" id="axBtns"></span>
+</div>
+<div class="legend" id="legend"></div>
+<div class="grids">
+<div><div class="cap">X(原矩阵,4×6)</div><table id="gx"></table></div>
+<div><div class="cap">结果(transpose 后 reshape(4,6))</div><table id="gy"></table></div>
+</div>
+</div>
+
+<div class="card"><h2>当前悬停的数字</h2><div id="info">把鼠标移到(或点一下)上面某个数字。</div></div>
+
+<div class="card" style="font-size:14px">
+<h2>怎么读</h2>
+reshape 把 X 的 24 个数按顺序切成多个轴(如 2×2×3×2);transpose 只是把这些轴换个排列顺序;最后 reshape(4,6) 把前两个轴合成行、后两个轴合成列。<br>
+颜色表示“这个数在选中那个轴上的下标”,换轴顺序时,看同色的数怎么被搬到一起。
+</div>
+</main>
+<script>
+const TARGET=[[1,3,5,13,15,17],[2,4,6,14,16,18],[7,9,11,19,21,23],[8,10,12,20,22,24]];
+const PRE={A:[[2,2,3,2],[0,2,1,3]],B:[[2,3,2,2],[1,0,2,3]],C:[[2,3,2,2],[2,3,0,1]],D:[[2,2,3,2],[1,3,0,2]]};
+let shape=[2,2,3,2],perm=[1,3,0,2],cAx=1,hover=null,pre='D';
+const $=id=>document.getElementById(id);
+const NAME=['轴0','轴1','轴2','轴3'];
+
+function unravel(f,s){const r=[];for(let k=s.length-1;k>=0;k--){r[k]=f%s[k];f=Math.floor(f/s[k]);}return r}
+function compute(){
+  if(shape.reduce((a,b)=>a*b,1)!==24)return null;
+  if(new Set(perm).size!==4)return null;
+  const ns=perm.map(p=>shape[p]);
+  const map=[]; // value index -> {idx,nidx,r,c}
+  const Y=Array.from({length:4},()=>Array(6).fill(0));
+  for(let f=0;f<24;f++){
+    const idx=unravel(f,shape);
+    const nidx=perm.map(p=>idx[p]);
+    let nf=0;for(let k=0;k<4;k++)nf=nf*ns[k]+nidx[k];
+    const r=Math.floor(nf/6),c=nf%6;
+    map[f]={idx,nidx,r,c};Y[r][c]=f+1;
+  }
+  return {map,Y,ns};
+}
+function color(v,res){
+  const i=res.map[v-1].idx[cAx]%3;
+  return `var(--c${i})`;
+}
+function build(){
+  $('presets').innerHTML=Object.keys(PRE).map(k=>`<button data-k="${k}" class="${pre===k?'on':''}">选项 ${k}</button>`).join('');
+  $('presets').querySelectorAll('button').forEach(b=>b.onclick=()=>{pre=b.dataset.k;[shape,perm]=[PRE[pre][0].slice(),PRE[pre][1].slice()];build();draw()});
+  $('shapeIn').innerHTML=shape.map((s,i)=>`<input data-i="${i}" value="${s}" inputmode="numeric" aria-label="shape ${i}">`).join(' ');
+  $('shapeIn').querySelectorAll('input').forEach(e=>e.onchange=()=>{shape[+e.dataset.i]=Math.max(1,parseInt(e.value)||1);pre='';build();draw()});
+  $('permIn').innerHTML=perm.map((p,i)=>`<select data-i="${i}" aria-label="perm ${i}">${[0,1,2,3].map(n=>`<option ${n===p?'selected':''}>${n}</option>`).join('')}</select>`).join(' ');
+  $('permIn').querySelectorAll('select').forEach(e=>e.onchange=()=>{perm[+e.dataset.i]=+e.value;pre='';build();draw()});
+  $('axBtns').innerHTML=[0,1,2,3].map(i=>`<button data-i="${i}" class="${cAx===i?'on':''}">${NAME[i]}</button>`).join(' ');
+  $('axBtns').querySelectorAll('button').forEach(b=>b.onclick=()=>{cAx=+b.dataset.i;build();draw()});
+}
+function grid(el,M,res,side){
+  el.innerHTML=M.map((row,r)=>'<tr>'+row.map((v,c)=>`<td data-v="${v}" style="background:${color(v,res)}">${v}</td>`).join('')+'</tr>').join('');
+  el.querySelectorAll('td').forEach(td=>{
+    const f=()=>{hover=+td.dataset.v;mark(res)};
+    td.onmouseenter=f;td.onclick=f;
+  });
+}
+function mark(res){
+  document.querySelectorAll('td').forEach(td=>td.classList.toggle('hl',+td.dataset.v===hover));
+  if(!hover||!res){return}
+  const m=res.map[hover-1];
+  $('info').innerHTML=`数字 <b>${hover}</b>:<br>在 ${shape.join('×')} 里的位置 (${m.idx.join(', ')})<br>换轴后位置 (${m.nidx.join(', ')}) 形状 ${res.ns.join('×')}<br>拼回 4×6 后:第 <b>${m.r+1}</b> 行,第 <b>${m.c+1}</b> 列`;
+}
+function draw(){
+  $('code').textContent=`X.reshape(${shape.join(', ')}).transpose(${perm.join(', ')}).reshape(4, 6)`;
+  const res=compute();
+  const X=Array.from({length:4},(_,r)=>Array.from({length:6},(_,c)=>r*6+c+1));
+  if(!res){
+    $('status').innerHTML='<span class="bad">不合法:reshape 各维相乘必须是 24,且轴顺序必须是 0~3 各出现一次。</span>';
+    $('gx').innerHTML='';$('gy').innerHTML='';$('legend').innerHTML='';return;
+  }
+  const n=shape[cAx];
+  $('legend').innerHTML=`${NAME[cAx]}(长度 ${n})下标:`+[0,1,2].slice(0,n).map(i=>`<span style="background:var(--c${i})">${i}</span>`).join('');
+  grid($('gx'),X,res);grid($('gy'),res.Y,res);
+  const ok=JSON.stringify(res.Y)===JSON.stringify(TARGET);
+  $('status').innerHTML=ok?'<span class="ok">✓ 结果和题目里的目标矩阵一致</span>':'<span class="bad">✗ 结果和题目里的目标矩阵不一致</span>';
+  mark(res);
+}
+build();draw();
+</script>
+</body>
+</html>
