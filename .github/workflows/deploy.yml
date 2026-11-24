@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
-          node-version: 22
+          node-version: '>=22.22.0 <23'
 
 
       # 安装依赖

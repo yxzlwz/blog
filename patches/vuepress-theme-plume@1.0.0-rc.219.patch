@@ -1,0 +1,14 @@
+diff --git a/dist/client/components/VPDoc.vue b/dist/client/components/VPDoc.vue
+index b64f1782e8cf722636576d0d5f5b6b2b1bf1bf5e..44b130c842dcce6e02346e89404a019b2dbfea28 100644
+--- a/dist/client/components/VPDoc.vue
++++ b/dist/client/components/VPDoc.vue
+@@ -153,6 +153,8 @@ watch(
+                   class="vp-doc plume-content"
+                   :class="[pageName, enabledExternalLinkIcon && 'external-link-icon-enabled']" vp-content
+                 >
+-                  <VPReadAid v-if="!mobile && enableReadAid" />
++                  <ClientOnly>
++                    <VPReadAid v-if="!mobile && enableReadAid" />
++                  </ClientOnly>
+
+                   <slot name="doc-content-before" />

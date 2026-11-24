@@ -47,6 +47,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     hostname: 'https://yxzl.dev',
+    linkPreview: true,
 
     docsRepo: 'yxzlwz/blog',
     docsDir: 'docs',
